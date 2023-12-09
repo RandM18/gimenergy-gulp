@@ -1,0 +1,27 @@
+@@include('tpl/head.html', {class:"features-page"})
+@@include('tpl/header.html')
+<main class="main" id="main">
+    <div class="mainhead">
+        <div class="container">
+            <div class="mainhead__wrapper">
+                <h1 class="rvtitle mainhead__title">
+                    <div class="mainhead__title_row mainhead__title_row-2">Uppointment use cases</div>
+                </h1>
+                <div class="mainhead__text">Easy to book, hard to miss. For all types of service providers and their customers at anytime on any device.Your
+                frontdesk would love it too.</div>
+            </div>
+        </div>
+    </div>
+    <div class="featuresList">
+        <div class="container">
+            <div class="featuresList__wrapper">
+                @@include('./tpl/components/cases-item.html')
+            </div>
+        </div>
+    </div>
+
+    @@include('./tpl/components/mainform.html')
+
+</main>
+@@include('tpl/footer.html')
+@@include('tpl/foot.html')
