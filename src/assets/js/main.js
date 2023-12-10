@@ -6,6 +6,26 @@ jQuery(function ($) {
     $(".mobileMenu__link-sub").on("click", function (e) {
         $(this).toggleClass("active");
     });
+
+    const onScrollHeader = () => {
+        const header = $(".header");
+        let prevScroll = $(window).scrollTop();
+        let currentScroll;
+        $(window).scroll(() => {
+            currentScroll = $(window).scrollTop();
+            const headerHidden = () => header.hasClass("header_hidden");
+            if (currentScroll > prevScroll && !headerHidden()) {
+                header.addClass("header_hidden");
+            }
+            if (currentScroll < prevScroll && headerHidden()) {
+                header.removeClass("header_hidden");
+            }
+            prevScroll = currentScroll;
+        });
+    };
+    onScrollHeader();
+
+
     const mainsliderSmall = new Swiper(".mainslider-swiper-small", {
         speed: 700,
         allowTouchMove: false,
@@ -60,10 +80,10 @@ jQuery(function ($) {
             },
         },
     });
-
     const faq = new Swiper(".sfaq__tabs", {
         allowTouchMove: false,
     });
+
     $(".sfaq__links").on('click', 'a', function(e){
         e.preventDefault();
         $(".sfaq__links .active").removeClass('active');
@@ -71,7 +91,6 @@ jQuery(function ($) {
         faq.slideTo($(this).data('tab'));
     });
    
-
     $(".maincard__title").hover(
         function () {
             $(this).closest(".maincard__body").addClass("hover");
@@ -81,14 +100,15 @@ jQuery(function ($) {
         }
     );
 
-    const maincardBtnAnim = gsap.timeline({ paused: true });
-    maincardBtnAnim
-        .to("#maincards-cart", { duration: 0.2, x: 30 })
-        .to("#maincards-cart", { duration: 0.2, x: -30 })
-        .to("#maincards-cart", { duration: 0.2, x: 10 })
-        .to("#maincards-cart", { duration: 0.2, x: -10 })
-        .to("#maincards-cart", { duration: 0.2, x: 0 });
-    
+    if($('#maincards-cart').length>0){
+        const maincardBtnAnim = gsap.timeline({ paused: true });
+        maincardBtnAnim
+            .to("#maincards-cart", { duration: 0.2, x: 30 })
+            .to("#maincards-cart", { duration: 0.2, x: -30 })
+            .to("#maincards-cart", { duration: 0.2, x: 10 })
+            .to("#maincards-cart", { duration: 0.2, x: -10 })
+            .to("#maincards-cart", { duration: 0.2, x: 0 });
+    }
     $(".front-page .maincard input").on("change", function (e) {
         let c = $("#maincards-cart .count"),
             count = $(".maincard input:checked").length;
@@ -123,13 +143,15 @@ jQuery(function ($) {
             );
     });
 
-    const pricingBtnAnim = gsap.timeline({ paused: true });
-    pricingBtnAnim
-        .to("#mainpricing-cart", { duration: 0.2, x: 30 })
-        .to("#mainpricing-cart", { duration: 0.2, x: -30 })
-        .to("#mainpricing-cart", { duration: 0.2, x: 10 })
-        .to("#mainpricing-cart", { duration: 0.2, x: -10 })
-        .to("#mainpricing-cart", { duration: 0.2, x: 0 });
+    if ($("#mainpricing-cart").length > 0) {
+        const pricingBtnAnim = gsap.timeline({ paused: true });
+        pricingBtnAnim
+            .to("#mainpricing-cart", { duration: 0.2, x: 30 })
+            .to("#mainpricing-cart", { duration: 0.2, x: -30 })
+            .to("#mainpricing-cart", { duration: 0.2, x: 10 })
+            .to("#mainpricing-cart", { duration: 0.2, x: -10 })
+            .to("#mainpricing-cart", { duration: 0.2, x: 0 });
+    }
     $(".front-page .pricingcard input").on("change", function (e) {
         let c = $("#mainpricing-cart .count"),
             count = $(".pricingcard input:checked").length;
@@ -169,18 +191,19 @@ jQuery(function ($) {
             count = $(".pricingcard input:checked").length;
         if (count > 0) {
             c.slideDown();
+            if ($(this).closest(".swiper-slide").index() % 2 == 0) {
+                $(".pricingCards__header").hide();
+            } else {
+                $(".pricingCards__header").show().css("display", "flex");
+            }
         } else {
-            c.slideUp();
+            c.slideUp(); 
         }
         $(".pricingcard input").each(function(){
             if(!$(this).prop('checked')){
                 $(this).closest('.pricingcard').removeClass('active');
             }
         });
-        // if (!$(this).prop("checked")) {
-        //     $(this).parent().removeClass("active");
-        //     return;
-        // }
         $(this)
             .parent()
             .addClass("active");
@@ -202,11 +225,6 @@ jQuery(function ($) {
             $(this).closest(".pricingCards__item").removeClass("hover");
         }
     );
-
-
-    // checkoutHeader__items;
-    // checkout__tab;
-
 
 
     function isInView(elem) {
@@ -245,23 +263,7 @@ jQuery(function ($) {
         }
     });
 
-    const onScrollHeader = () => {
-        const header = $(".header");
-        let prevScroll = $(window).scrollTop();
-        let currentScroll;
-        $(window).scroll(() => {
-            currentScroll = $(window).scrollTop();
-            const headerHidden = () => header.hasClass("header_hidden");
-            if (currentScroll > prevScroll && !headerHidden()) {
-                header.addClass("header_hidden");
-            }
-            if (currentScroll < prevScroll && headerHidden()) {
-                header.removeClass("header_hidden");
-            }
-            prevScroll = currentScroll;
-        });
-    };
-    onScrollHeader();
+   
 
     $(".faqItem__header").on('click', function(e){
         $(this).toggleClass("active").closest(".faqItem").find(".faqItem__body").slideToggle();
@@ -274,56 +276,63 @@ jQuery(function ($) {
     
   
     // GSAP
-    gsap.to(".mainparallax__wrapper", {
-        scrollTrigger: {
-            trigger: ".mainparallax",
-            scrub: 2,
-            start: "top center",
-            end: "+=200",
-            ease: "power1.out",
-        },
-        scale: 1,
-    });
-    gsap.to(".mainhead__title_row-1", {
-        scrollTrigger: {
-            trigger: ".mainhead",
-            scrub: 2,
-            start: "top",
-            ease: "power1.out",
-        },
-        y: -50,
-    });
-    gsap.to(".mainhead__title_row-2", {
-        scrollTrigger: {
-            trigger: ".mainhead",
-            scrub: 2,
-            start: "top",
-            ease: "power1.out",
-        },
-        y: -230,
-    });
-    gsap.to('.mainhead__text', {
-        backgroundPositionY: "100%",
-        duration:1
-    })
+    if($('.mainparallax').length>0){
+        gsap.to(".mainparallax__wrapper", {
+            scrollTrigger: {
+                trigger: ".mainparallax",
+                scrub: 2,
+                start: "top center",
+                end: "+=200",
+                ease: "power1.out",
+            },
+            scale: 1,
+        });
+        const growTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".mainparallax",
+                scrub: 1.5,
+                start: "top center",
+                end: "-=200",
+                ease: "power1.out",
+            },
+        });
+        growTl.to(".mainparallax__logo", {
+            duration: 1,
+            opacity: 1,
+            top: "45%",
+        });
+        growTl.to(".mainparallax__logo", {
+            duration: 1,
+            delay: -0.1,
+            width: "auto",
+        });
+    }
+    if ($(".mainhead__title_row-1").length > 0) {
+        gsap.to(".mainhead__title_row-1", {
+            scrollTrigger: {
+                trigger: ".mainhead",
+                scrub: 2,
+                start: "top",
+                ease: "power1.out",
+            },
+            y: -50,
+        });
+    }
+    if ($(".mainhead__title_row-2").length > 0)
+        gsap.to(".mainhead__title_row-2", {
+            scrollTrigger: {
+                trigger: ".mainhead",
+                scrub: 2,
+                start: "top",
+                ease: "power1.out",
+            },
+            y: -230,
+        });
+    if ($(".mainhead__text").length > 0)
+        gsap.to(".mainhead__text", {
+            backgroundPositionY: "100%",
+            duration: 1,
+        });
 
-    const growTl = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".mainparallax",
-            scrub: 1.5,
-            start: "top center",
-            end: "-=200",
-            ease: "power1.out",
-        },
-    });
-    growTl.to(".mainparallax__logo", {
-        duration: 1,
-        opacity: 1,
-        top: "45%",
-    });
-    growTl.to(".mainparallax__logo", {
-        duration: 1,
-        delay: -0.1,
-        width: "auto",
-    });
+    
 });

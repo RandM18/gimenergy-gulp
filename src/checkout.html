@@ -11,25 +11,76 @@
                 <div class="checkoutHeader__item">Complete</div>
             </div>
         </div>
-        <div class="checkoutBody">
+        <form action="#" class="checkoutBody">
             <div class="checkout__main">
                 <div class="checkout__tab">
                     <div class="checkoutBox">
                         <div class="checkoutBox__title">Checkout</div>
                         <div class="checkoutBox__body">
-                            
+                            <div class="checkout__subscribes">
+                                <label class="checkout__subscribe">
+                                    <input type="radio" name="subscribe" value="annual" checked>
+                                    <span>Annual subscription</span> 
+                                </label>
+                                <label class="checkout__subscribe">
+                                    <input type="radio" name="subscribe" value="monthly">
+                                    <span>Monthly subscription</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="checkoutBox">
                         <div class="checkoutBox__title">Enhance your plan with powerful add-ons</div>
                         <div class="checkoutBox__body">
-                            
+                            <div class="checkout__addon">
+                                <div class="checkout__addon_title">Premium</div>
+                                <label class="checkout__addon_body">
+                                    <input type="checkbox" name="addon" value="premium"><span></span>
+                                    <div class="checkout__addon_value"><span>Want us to monitor your site for issues?</span> for $25.00 / year</div>
+                                    <div class="checkout__addon_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                                </label>
+                            </div>
+                            <div class="checkout__addon">
+                                <div class="checkout__addon_title">Premium Plus</div>
+                                <label class="checkout__addon_body">
+                                    <input type="checkbox" name="addon" value="premium plus"><span></span>
+                                    <div class="checkout__addon_value"><span>Want us to monitor your site for issues?</span> for $40.00 / year</div>
+                                    <div class="checkout__addon_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="checkoutBox">
                         <div class="checkoutBox__title">Account information</div>
                         <div class="checkoutBox__body">
-                            
+                            <div class="checkout__information">
+                                <div class="box">
+                                    <label for="firstname">First name</label>
+                                    <input type="text" name="firstname" id="firstname" placeholder="First name" class="textbox" required>
+                                </div>
+                                <div class="box">
+                                    <label for="lastname">Last name</label>
+                                    <input type="text" name="lastname" id="lastname" placeholder="Last name" class="textbox" required>
+                                </div>
+                                <div class="box">
+                                    <label for="company">Company (optional)</label>
+                                    <input type="text" name="company" id="company" placeholder="Company" class="textbox">
+                                </div>
+                                <div class="box">
+                                    <label for="phone">Phone (optional)</label>
+                                    <input type="text" name="phone" id="phone" placeholder="Phone" class="textbox">
+                                </div>
+                                <div class="box">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" placeholder="Email" class="textbox" required>
+                                </div>
+                                <div class="box">
+                                    <label for="accountname">Account name</label>
+                                    <input type="text" name="accountname" id="accountname" placeholder="Account name" class="textbox" required>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -52,9 +103,37 @@
                 </div>
             </div>
             <div class="checkout__sidebar">
-
+                <div class="checkoutBox__title">Cart</div>
+                <div class="checkout__sidebar_cart">
+                    <div class="checkout__sidebar_row">
+                        <span>Premium Plus Plan</span>
+                        <span>$430.00</span>
+                    </div>
+                    <div class="checkout__sidebar_row green">
+                        <span>Annual discount</span>
+                        <span>-$43.00</span>
+                    </div>
+                    <div class="checkout__sidebar_row green">
+                        <span>First time user discount</span>
+                        <span>10%</span>
+                    </div>
+                    <div class="checkout__sidebar_row">
+                        <span>Tax</span>
+                        <span>$0.00</span>
+                    </div>
+                </div>
+                <div class="checkout__sidebar_coupon">
+                    <input type="text" name="coupon" id="coupon" class="textbox" placeholder="First time user">
+                    <button class="rvbtn" type="button">Apply</button>
+                </div>
+                <div class="checkout__sidebar_footer">
+                    <p>Today's total</p>
+                    <div class="checkout__sidebar_price">$397.00 <span>annual</span></div>
+                    <div class="checkout__sidebar_mark">That's only <strong>$50 per month!</strong></div>
+                </div>
+                <div class="checkout__sidebar_btn"><button type="submit">Continue to Payment</button></div>
             </div>
-        </div>
+        </form>
     </div>
 
 </main>
