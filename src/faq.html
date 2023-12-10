@@ -1,0 +1,50 @@
+@@include('tpl/head.html', {class:"faq-page"})
+@@include('tpl/header.html')
+<main class="main" id="main">
+    <div class="mainhead">
+        <div class="container">
+            <div class="mainhead__wrapper">
+                <h1 class="rvtitle mainhead__title">
+                    <div class="mainhead__title_row mainhead__title_row-1">Frequently Asked Questions</div>
+                </h1>
+                <div class="mainhead__text">Get answers and explore Uppointment’s features for easy booking, invoicing, customer relation management to improve your
+                business end-to-end.</div>
+            </div>
+        </div>
+    </div>
+    <div class="sfaq">
+        <div class="container">
+            <div class="sfaq__wrapper">
+                <div class="sfaq__box">
+                    <ul class="sfaq__links">
+                        @@loop('./tpl/components/faq-link.html', [
+                        { "tab": 0, "class": "class='active'", "icon": "chat2", "text": "General FAQ's"},
+                        { "tab": 1, "class": "", "icon": "registration", "text": "Registration"},
+                        { "tab": 2, "class": "", "icon": "booking", "text": "Scheduling / Booking form"},
+                        { "tab": 3, "class": "", "icon": "settings", "text": "Managing Users and Locations"},
+                        { "tab": 4, "class": "", "icon": "card", "text": "Blling"},
+                        { "tab": 5, "class": "", "icon": "api", "text": "API and sharing"}
+                        ])
+                    </ul>
+                    <div class="swiper sfaq__tabs">
+                        <div class="swiper-wrapper">
+                            @@for(i=0;i<6;i++){ <div class="swiper-slide">
+                                @@loop('./tpl/components/faq-text.html', [
+                                { "title": "Getting started"},
+                                { "title": "After account deleted, how long I can use it"},
+                                { "title": "How to install ?"},
+                                { "title": "Where can I find templates for free website?"},
+                                { "title": "After account deleted, how long I can use it"}
+                                ])
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    @@include('./tpl/components/mainform.html')
+</main>
+@@include('tpl/footer.html')
+@@include('tpl/foot.html')

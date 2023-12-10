@@ -274,6 +274,22 @@ jQuery(function ($) {
     // const teamsize = new CustomSelect("#teamsize");
     // const adminsize = new CustomSelect("#adminsize");
     
+    $("#continue-to-payment").on('click', function(e){
+        e.preventDefault();
+        $(".checkout__tab:eq(0)").hide();
+        $(".checkout__tab:eq(1)").show();
+        $(".checkout__sidebar:eq(0)").hide();
+        $(".checkout__sidebar:eq(1)").show();
+        $(".checkoutHeader__item:eq(1)").addClass('active');
+    });
+    $("#checkout-form").on('submit', function(e){
+        e.preventDefault();
+        $(".checkout__tab:eq(1)").hide();
+        $(".checkout__tab:eq(2)").show();
+        $(".checkout__sidebar:eq(1)").hide();
+        $(".checkoutHeader__item:eq(2)").addClass("active");
+    });
+
   
     // GSAP
     if($('.mainparallax').length>0){
@@ -334,5 +350,12 @@ jQuery(function ($) {
             duration: 1,
         });
 
+    if($('.aboutHeader__poster').length>0){
+        gsap.to(".aboutHeader__poster img", {
+            scale:1,
+            duration:1.5,
+            delay:.3
+        });
+    }
     
 });
