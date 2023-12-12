@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="assets/css/custom-select.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
 </head>
 
 <body class="checkout-page">
@@ -177,54 +178,16 @@
             <div class="checkout__main">
                 <div class="checkout__tab">
                     <div class="checkoutBox">
-                        <div class="checkoutBox__title">Checkout</div>
-                        <div class="checkoutBox__body">
-                            <div class="checkout__subscribes">
-                                <label class="checkout__subscribe">
-                                    <input type="radio" name="subscribe" value="annual" checked>
-                                    <span>Annual subscription</span> 
-                                </label>
-                                <label class="checkout__subscribe">
-                                    <input type="radio" name="subscribe" value="monthly">
-                                    <span>Monthly subscription</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="checkoutBox">
-                        <div class="checkoutBox__title">Enhance your plan with powerful add-ons</div>
-                        <div class="checkoutBox__body">
-                            <div class="checkout__addon">
-                                <div class="checkout__addon_title">Premium</div>
-                                <label class="checkout__addon_body">
-                                    <input type="checkbox" name="addon" value="premium"><span></span>
-                                    <div class="checkout__addon_value"><span>Want us to monitor your site for issues?</span> for $25.00 / year</div>
-                                    <div class="checkout__addon_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
-                                </label>
-                            </div>
-                            <div class="checkout__addon">
-                                <div class="checkout__addon_title">Premium Plus</div>
-                                <label class="checkout__addon_body">
-                                    <input type="checkbox" name="addon" value="premium plus"><span></span>
-                                    <div class="checkout__addon_value"><span>Want us to monitor your site for issues?</span> for $40.00 / year</div>
-                                    <div class="checkout__addon_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="checkoutBox">
                         <div class="checkoutBox__title">Account information</div>
                         <div class="checkoutBox__body">
                             <div class="checkout__information">
                                 <div class="box">
                                     <label for="firstname">First name</label>
-                                    <input type="text" name="firstname" id="firstname" placeholder="First name" class="textbox" required>
+                                    <input type="text" name="firstname" id="firstname" placeholder="First name" class="textbox" required2>
                                 </div>
                                 <div class="box">
                                     <label for="lastname">Last name</label>
-                                    <input type="text" name="lastname" id="lastname" placeholder="Last name" class="textbox" required>
+                                    <input type="text" name="lastname" id="lastname" placeholder="Last name" class="textbox" required2>
                                 </div>
                                 <div class="box">
                                     <label for="company">Company (optional)</label>
@@ -236,36 +199,78 @@
                                 </div>
                                 <div class="box">
                                     <label for="email">Email</label>
-                                    <input type="text" name="email" id="email" placeholder="Email" class="textbox" required>
+                                    <input type="text" name="email" id="email" placeholder="Email" class="textbox" required2>
                                 </div>
                                 <div class="box">
                                     <label for="accountname">Account name</label>
-                                    <input type="text" name="accountname" id="accountname" placeholder="Account name" class="textbox" required>
+                                    <input type="text" name="accountname" id="accountname" placeholder="Account name" class="textbox" required2>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkoutBox">
+                        <div class="checkoutBox__title">Checkout</div>
+                        <div class="checkoutBox__body">
+                            <div class="checkout__subscribes">
+                                <label class="checkout__subscribe">
+                                    <input type="radio" name="subscribe" value="annual" checked>
+                                    <span>Annual subscription</span>
+                                </label>
+                                <label class="checkout__subscribe">
+                                    <input type="radio" name="subscribe" value="monthly">
+                                    <span>Monthly subscription</span>
+                                </label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="checkout__tab" style="display: none;">
                     <div class="checkoutBox">
+                        <div class="checkoutBox__title">Enhance your plan with powerful add-ons</div>
+                        <div class="checkoutBox__body">
+                            <div class="checkout__addon">
+                                <div class="checkout__addon_title">Premium</div>
+                                <label class="checkout__addon_body">
+                                    <input type="checkbox" name="addon" value="premium"><span></span>
+                                    <div class="checkout__addon_value"><span>Want us to monitor your site for issues?</span> for $25.00 /
+                                        year</div>
+                                    <div class="checkout__addon_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                        commodo ligula eget dolor. Aenean massa. Cum sociis
+                                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                                </label>
+                            </div>
+                            <div class="checkout__addon">
+                                <div class="checkout__addon_title">Premium Plus</div>
+                                <label class="checkout__addon_body">
+                                    <input type="checkbox" name="addon" value="premium plus"><span></span>
+                                    <div class="checkout__addon_value"><span>Want us to monitor your site for issues?</span> for $40.00 /
+                                        year</div>
+                                    <div class="checkout__addon_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                        commodo ligula eget dolor. Aenean massa. Cum sociis
+                                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkoutBox">
                         <div class="checkoutBox__title">Payment <span><img src="assets/img/cards.svg" alt="cards"></span></div>
                         <div class="checkoutBox__body">
                             <div class="checkout__information checkout__payment">
                                 <div class="box">
                                     <label for="cardname">Card name</label>
-                                    <input type="text" name="cardname" id="cardname" placeholder="Card name" class="textbox" required>
+                                    <input type="text" name="cardname" id="cardname" placeholder="Card name" class="textbox" required2>
                                 </div>
                                 <div class="box">
                                     <label for="mmyy">MM / YY</label>
-                                    <input type="text" name="mmyy" id="mmyy" placeholder="00/00" class="textbox" required>
+                                    <input type="text" name="mmyy" id="mmyy" placeholder="00/00" class="textbox" required2>
                                 </div>
                                 <div class="box">
                                     <label for="cvv">CVV</label>
-                                    <input type="text" name="cvv" id="cvv" placeholder="***" class="textbox" required>
+                                    <input type="text" name="cvv" id="cvv" placeholder="***" class="textbox" required2>
                                 </div>
                                 <div class="box">
                                     <label for="billingaddress">Billing address</label>
-                                    <input type="text" name="billingaddress" id="billingaddress" placeholder="Address" class="textbox" required>
+                                    <input type="text" name="billingaddress" id="billingaddress" placeholder="Address" class="textbox" required2>
                                 </div>
                                 <div class="box">
                                     <label for="billingaddress2">Billing address 2 (optional)</label>

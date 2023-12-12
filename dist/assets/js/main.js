@@ -108,40 +108,41 @@ jQuery(function ($) {
             .to("#maincards-cart", { duration: 0.2, x: 10 })
             .to("#maincards-cart", { duration: 0.2, x: -10 })
             .to("#maincards-cart", { duration: 0.2, x: 0 });
+
+        $(".front-page .maincard input").on("change", function (e) {
+            let c = $("#maincards-cart .count"),
+                count = $(".maincard input:checked").length;
+            c.html(count);
+            maincardBtnAnim.restart();
+            if (count > 0) {
+                c.show();
+                $("#maincards-cart .text").text("Continue");
+            } else {
+                c.hide();
+                $("#maincards-cart .text").text("Sign up now");
+            }
+            if (!$(this).prop("checked")) {
+                $(this).parent().removeClass("active");
+                return;
+            }
+            $(this)
+                .parent()
+                .addClass("active")
+                .clone()
+                .css({ position: "absolute", "z-index": "100", bottom: "0" })
+                .appendTo($(this).parent())
+                .animate(
+                    {
+                        bottom: -150,
+                        opacity: 0,
+                    },
+                    700,
+                    function () {
+                        $(this).remove();
+                    }
+                );
+        });
     }
-    $(".front-page .maincard input").on("change", function (e) {
-        let c = $("#maincards-cart .count"),
-            count = $(".maincard input:checked").length;
-        c.html(count);
-        maincardBtnAnim.restart();
-        if (count > 0) {
-            c.show();
-            $("#maincards-cart .text").text("Continue");
-        } else {
-            c.hide();
-            $("#maincards-cart .text").text("Sign up now");
-        }
-        if (!$(this).prop("checked")) {
-            $(this).parent().removeClass("active");
-            return;
-        }
-        $(this)
-            .parent()
-            .addClass("active")
-            .clone()
-            .css({ position: "absolute", "z-index": "100", bottom: "0" })
-            .appendTo($(this).parent())
-            .animate(
-                {
-                    bottom: -150,
-                    opacity: 0,
-                },
-                700,
-                function () {
-                    $(this).remove();
-                }
-            );
-    });
 
     if ($("#mainpricing-cart").length > 0) {
         const pricingBtnAnim = gsap.timeline({ paused: true });
@@ -151,40 +152,41 @@ jQuery(function ($) {
             .to("#mainpricing-cart", { duration: 0.2, x: 10 })
             .to("#mainpricing-cart", { duration: 0.2, x: -10 })
             .to("#mainpricing-cart", { duration: 0.2, x: 0 });
+
+        $(".front-page .pricingcard input").on("change", function (e) {
+            let c = $("#mainpricing-cart .count"),
+                count = $(".pricingcard input:checked").length;
+            c.html(count);
+            pricingBtnAnim.restart();
+            if (count > 0) {
+                c.show();
+                $("#mainpricing-cart .text").text("Continue");
+            } else {
+                c.hide();
+                $("#mainpricing-cart .text").text("Let's go");
+            }
+            if (!$(this).prop("checked")) {
+                $(this).parent().removeClass("active");
+                return;
+            }
+            $(this)
+                .parent()
+                .addClass("active")
+                .clone()
+                .css({ position: "absolute", "z-index": "100", bottom: "0" })
+                .appendTo($(this).parent())
+                .animate(
+                    {
+                        bottom: -150,
+                        opacity: 0,
+                    },
+                    700,
+                    function () {
+                        $(this).remove();
+                    }
+                );
+        });
     }
-    $(".front-page .pricingcard input").on("change", function (e) {
-        let c = $("#mainpricing-cart .count"),
-            count = $(".pricingcard input:checked").length;
-        c.html(count);
-        pricingBtnAnim.restart();
-        if (count > 0) {
-            c.show();
-            $("#mainpricing-cart .text").text("Continue");
-        } else {
-            c.hide();
-            $("#mainpricing-cart .text").text("Let's go");
-        }
-        if (!$(this).prop("checked")) {
-            $(this).parent().removeClass("active");
-            return;
-        }
-        $(this)
-            .parent()
-            .addClass("active")
-            .clone()
-            .css({ position: "absolute", "z-index": "100", bottom: "0" })
-            .appendTo($(this).parent())
-            .animate(
-                {
-                    bottom: -150,
-                    opacity: 0,
-                },
-                700,
-                function () {
-                    $(this).remove();
-                }
-            );
-    });
 
     $(".pricing-page .pricingcard input").on("change", function (e) {
         let c = $(".pricingCards"),
@@ -350,11 +352,30 @@ jQuery(function ($) {
             duration: 1,
         });
 
-    if($('.aboutHeader__poster').length>0){
-        gsap.to(".aboutHeader__poster img", {
-            scale:1,
-            duration:1.5,
-            delay:.3
+     if ($(".singlehead__title").length > 0)
+         gsap.to(".singlehead__title", {
+            scrollTrigger: {
+            trigger: ".singlehead",
+            scrub: 2,
+            start: "top",
+            ease: "power1.out",
+            },
+            y: -230,
+         });
+
+
+    if($('.featuresList').length>0){
+        gsap.to(".featuresList__item", {
+            scrollTrigger: {
+                trigger: ".featuresList",
+                start: "-150 center",
+                // end: "+=300px",
+                // scrub: 1,
+            },
+            opacity: 1,
+            x: 0,
+            stagger: 0.3,
+            duration:.6
         });
     }
     
