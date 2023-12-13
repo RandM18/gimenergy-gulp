@@ -145,7 +145,6 @@ $maxWidthContainer: 1374;
             }
             text-decoration: none;
             color:#090909;
-            font-weight: 500;
             span{
                 &::after{
                     content:'';
@@ -181,7 +180,6 @@ $maxWidthContainer: 1374;
         position: relative;
         & > a {
                 color: #090909;
-                font-weight: 500;
                 text-decoration: none;
                 position: relative;
                 display: flex;
@@ -256,7 +254,6 @@ $maxWidthContainer: 1374;
         
                     text-decoration: none;
                     color:#090909;
-                    font-weight: 500;
         
                     span {
                         &::after {
@@ -364,7 +361,6 @@ $maxWidthContainer: 1374;
         color:  #090909;
         font-family: "Montagu Slab";
         font-size: 32px;
-        font-weight: 500;
         line-height: 1.18;
         text-decoration: none;
         display: flex;
@@ -387,7 +383,6 @@ $maxWidthContainer: 1374;
             a{
                 display: flex;
                 gap: 18px;
-                font-weight: 500;
                 color:#090909;
                 align-items: center;
                 text-decoration: none;
@@ -441,7 +436,6 @@ body.mobile-menu{
     padding: 12px 16px;
     // min-width: 210px;
     color:#fff;
-    font-weight: 600;
     gap:10px;
     transition: .5s ease;
     text-align: center;
@@ -499,7 +493,6 @@ body.mobile-menu{
 
     &__text {
         display: inline-block;
-        font-weight: 500;
         text-align: center;
         @include af(32, 18);
         background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nNTE2JyBoZWlnaHQ9JzgnIHZpZXdCb3g9JzAgMCA1MTYgOCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMSA3QzEgNyA0MS43MzIxIDEuODQzNDYgMjU1LjA5MSAxLjEwNjgxQzQ2OC40NDkgMC4zNzAxNjcgNTE1IDMuNjg1MDggNTE1IDMuNjg1MDgnIHN0cm9rZT0nIzU3OTNEQicgc3Ryb2tlLXdpZHRoPScyJyBzdHJva2UtbGluZWNhcD0ncm91bmQnLz48L3N2Zz4=");
@@ -593,7 +586,6 @@ body.mobile-menu{
         border-radius: 16px;
         background: #E8DDCF;
         overflow: hidden; 
-        font-weight: 500;
         flex:1;
         position: relative;
         transition: .3s ease;
@@ -736,7 +728,6 @@ body.mobile-menu{
         font-size: 32px;
         font-weight: 500;
         line-height: 1.18;
-        font-weight: 500;
         margin-bottom: 16px;
         color:#fff;
         max-width: 525px;
@@ -745,7 +736,6 @@ body.mobile-menu{
     // .mainparallax__text
 
     &__text {
-        font-weight: 500;
         color:#fff;
         max-width: 525px;
         margin-bottom: 265px;
@@ -918,7 +908,6 @@ body.mobile-menu{
 
     &__link{
         color:#2B4657;
-        font-weight: 600;
         text-decoration: none;
         display: flex;
         align-items: center;
@@ -949,7 +938,6 @@ body.mobile-menu{
     // .mainslider__text
 
     &__text {
-        font-weight: 500;
         color:#2C3647;
         margin-bottom: 16px;
     }
@@ -979,7 +967,6 @@ body.mobile-menu{
     }
 
     &__left{
-        font-weight: 500;
         flex: 0 0 436px;
         position: sticky;
         top: 120px;
@@ -1054,7 +1041,7 @@ body.mobile-menu{
         // .maininfo__row_body
 
         &_body {
-            font-weight: 500;
+            
             color: #D8DEFD;
         }
 
@@ -1066,6 +1053,7 @@ body.mobile-menu{
             @include af(32, 20);
             line-height: 1.18;
             margin-bottom: 8px;
+            font-weight: 500;
         }
 
         // .maininfo__row_text
@@ -1130,7 +1118,6 @@ body.mobile-menu{
     }
     li.active{
         color:#fff;
-        font-weight: 600;
         flex:1 1 auto;
         &::after{
             content:'';
@@ -1160,7 +1147,6 @@ body.mobile-menu{
 
     &__text {
         color:#2C3647;
-        font-weight: 500;
         margin-bottom: 32px;
         text-align: center;
 
@@ -1257,10 +1243,9 @@ body.mobile-menu{
 
     &__footer {
         padding-top: 16px;
-        font-weight: 500;
         text-align: center;
         span{
-            font-weight: 600;
+            font-weight: 500;
             font-size: 18px;
         }
     }
@@ -1309,7 +1294,6 @@ body.mobile-menu{
     // .mainform__text
 
     &__text {
-        font-weight: 600;
         text-align: center;
         max-width: 269px;
         @media(max-width: 768px){
@@ -1363,8 +1347,7 @@ body.mobile-menu{
         display: block;
         line-height: 1.33;
         font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 2px;
+        margin-bottom: 2px;
     }
 
     // .input__textbox
@@ -1386,7 +1369,6 @@ body.mobile-menu{
             border-radius: 4px;
             background-color: #CFA434;
             color:#fff;
-            font-weight: 600;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1444,7 +1426,6 @@ body.mobile-menu{
         justify-content: space-between;
         gap:16px;
         font-size: 14px;
-        font-weight: 500;
         ul{
             list-style: none;
             li{
@@ -1554,7 +1535,6 @@ body.mobile-menu{
                 color:#090909;
                 text-decoration: none;
                 padding: 26px 24px;
-                font-weight: 600;
                 line-height: 1.25;
                 border-bottom: 1px solid transparent;
                 &.active{
@@ -1656,7 +1636,6 @@ body.mobile-menu{
 
     &__body {
         padding: 0 24px 24px;
-        font-weight: 500;
         color:#2C3647;
     }
 }
@@ -1760,10 +1739,9 @@ body.mobile-menu{
 
         &_price {
             line-height: 1.25;
-            font-weight: 500;
             span{
                 font-size: 32px;
-                font-weight: 600;
+                font-weight: 500;
                 line-height: 1.18;
             }
         }
@@ -1809,7 +1787,6 @@ body.mobile-menu{
             padding: 12px 16px;
             background-color: #2B4657;
             color:#fff;
-            font-weight: 600;
             line-height: 1.25;
             margin: auto 32px 32px 32px;
             transition: background .3s ease;
@@ -1824,7 +1801,6 @@ body.mobile-menu{
 
     &__footer {
         font-size: 24px;
-        font-weight: 500;
         line-height: 1.16;
         text-align: center;
     }
@@ -1847,7 +1823,6 @@ body.mobile-menu{
     &__text {
         color:#747B7F;
         font-size: 14px;
-        font-weight: 500;
         line-height: 1.28;
         margin-bottom: 16px;
     }
@@ -1972,10 +1947,8 @@ body.mobile-menu{
             align-items: center;
             span{
                 line-height: 1.25;
-                font-weight: 500;
                 font-size: 14px;
                 &:last-child{
-                    font-weight: 600;
                     font-size: 16px;
                 }
             }
@@ -1998,7 +1971,6 @@ body.mobile-menu{
         &_footer {
             padding: 28px 32px 28px 32px;
             font-size: 14px;
-            font-weight: 500;
             line-height: 1.25;
         }
 
@@ -2164,7 +2136,6 @@ body.mobile-menu{
 
         &_value {
             font-size: 16px;
-            font-weight: 500;
             span{
                 font-weight: 600;
             }
@@ -2267,7 +2238,6 @@ body.mobile-menu{
     // .featuresList__item
 
     &__item {
-        font-weight: 500;
         border:1px solid #D8DEFD;
         padding: 16px 24px 16px 16px;
         display: flex;
@@ -2443,7 +2413,6 @@ body.mobile-menu{
 
     &__text {
         margin-bottom: 32px;
-        font-weight: 500;
         color:#2C3647;
     }
 

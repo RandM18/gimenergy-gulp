@@ -599,7 +599,6 @@ img {
     gap: 16px;
     text-decoration: none;
     color: #090909;
-    font-weight: 500;
 }
 
 .submenu li a img {
@@ -643,7 +642,6 @@ img {
 
 .menu li > a {
     color: #090909;
-    font-weight: 500;
     text-decoration: none;
     position: relative;
     display: flex;
@@ -715,7 +713,6 @@ img {
     gap: 16px;
     text-decoration: none;
     color: #090909;
-    font-weight: 500;
 }
 
 .menu li ul li a:after {
@@ -836,7 +833,6 @@ img {
     color: #090909;
     font-family: "Montagu Slab";
     font-size: 32px;
-    font-weight: 500;
     line-height: 1.18;
     text-decoration: none;
     display: flex;
@@ -866,7 +862,6 @@ img {
 .mobileMenu__submenu li a {
     display: flex;
     gap: 18px;
-    font-weight: 500;
     color: #090909;
     align-items: center;
     text-decoration: none;
@@ -918,7 +913,6 @@ body.mobile-menu .mobileMenu {
     border-radius: 4px;
     padding: 12px 16px;
     color: #fff;
-    font-weight: 600;
     gap: 10px;
     transition: 0.5s ease;
     text-align: center;
@@ -982,7 +976,6 @@ body.mobile-menu .mobileMenu {
 
 .mainhead__text {
     display: inline-block;
-    font-weight: 500;
     text-align: center;
     font-size: 32px;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nNTE2JyBoZWlnaHQ9JzgnIHZpZXdCb3g9JzAgMCA1MTYgOCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMSA3QzEgNyA0MS43MzIxIDEuODQzNDYgMjU1LjA5MSAxLjEwNjgxQzQ2OC40NDkgMC4zNzAxNjcgNTE1IDMuNjg1MDggNTE1IDMuNjg1MDgnIHN0cm9rZT0nIzU3OTNEQicgc3Ryb2tlLXdpZHRoPScyJyBzdHJva2UtbGluZWNhcD0ncm91bmQnLz48L3N2Zz4=");
@@ -1105,7 +1098,6 @@ body.mobile-menu .mobileMenu {
     border-radius: 16px;
     background: #E8DDCF;
     overflow: hidden;
-    font-weight: 500;
     flex: 1;
     position: relative;
     transition: 0.3s ease;
@@ -1258,14 +1250,12 @@ body.mobile-menu .mobileMenu {
     font-size: 32px;
     font-weight: 500;
     line-height: 1.18;
-    font-weight: 500;
     margin-bottom: 16px;
     color: #fff;
     max-width: 525px;
 }
 
 .mainparallax__text {
-    font-weight: 500;
     color: #fff;
     max-width: 525px;
     margin-bottom: 265px;
@@ -1461,7 +1451,6 @@ body.mobile-menu .mobileMenu {
 
 .mainslider__link {
     color: #2B4657;
-    font-weight: 600;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -1497,7 +1486,6 @@ body.mobile-menu .mobileMenu {
 }
 
 .mainslider__text {
-    font-weight: 500;
     color: #2C3647;
     margin-bottom: 16px;
 }
@@ -1533,7 +1521,6 @@ body.mobile-menu .mobileMenu {
 }
 
 .maininfo__left {
-    font-weight: 500;
     flex: 0 0 436px;
     position: sticky;
     top: 120px;
@@ -1617,7 +1604,6 @@ body.mobile-menu .mobileMenu {
 }
 
 .maininfo__row_body {
-    font-weight: 500;
     color: #D8DEFD;
 }
 
@@ -1626,6 +1612,7 @@ body.mobile-menu .mobileMenu {
     font-size: 32px;
     line-height: 1.18;
     margin-bottom: 8px;
+    font-weight: 500;
 }
 
 @media (max-width: 1374px) {
@@ -1698,7 +1685,6 @@ body.mobile-menu .mobileMenu {
 
 .maininfo__counter li.active {
     color: #fff;
-    font-weight: 600;
     flex: 1 1 auto;
 }
 
@@ -1725,7 +1711,6 @@ body.mobile-menu .mobileMenu {
 
 .mainpricing__text {
     color: #2C3647;
-    font-weight: 500;
     margin-bottom: 32px;
     text-align: center;
 }
@@ -1811,12 +1796,11 @@ body.mobile-menu .mobileMenu {
 
 .pricingcard__footer {
     padding-top: 16px;
-    font-weight: 500;
     text-align: center;
 }
 
 .pricingcard__footer span {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
 }
 
@@ -1876,7 +1860,6 @@ body.mobile-menu .mobileMenu {
 }
 
 .mainform__text {
-    font-weight: 600;
     text-align: center;
     max-width: 269px;
 }
@@ -1939,7 +1922,6 @@ body.mobile-menu .mobileMenu {
     display: block;
     line-height: 1.33;
     font-size: 12px;
-    font-weight: 600;
     margin-bottom: 2px;
 }
 
@@ -1957,7 +1939,6 @@ body.mobile-menu .mobileMenu {
     border-radius: 4px;
     background-color: #CFA434;
     color: #fff;
-    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2013,7 +1994,6 @@ body.mobile-menu .mobileMenu {
     justify-content: space-between;
     gap: 16px;
     font-size: 14px;
-    font-weight: 500;
 }
 
 .footer__body ul {
@@ -2135,7 +2115,6 @@ body.mobile-menu .mobileMenu {
     color: #090909;
     text-decoration: none;
     padding: 26px 24px;
-    font-weight: 600;
     line-height: 1.25;
     border-bottom: 1px solid transparent;
 }
@@ -2254,7 +2233,6 @@ body.mobile-menu .mobileMenu {
 
 .faqItem__body {
     padding: 0 24px 24px;
-    font-weight: 500;
     color: #2C3647;
 }
 
@@ -2365,12 +2343,11 @@ body.mobile-menu .mobileMenu {
 
 .pricingCards__item_price {
     line-height: 1.25;
-    font-weight: 500;
 }
 
 .pricingCards__item_price span {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.18;
 }
 
@@ -2411,7 +2388,6 @@ body.mobile-menu .mobileMenu {
     padding: 12px 16px;
     background-color: #2B4657;
     color: #fff;
-    font-weight: 600;
     line-height: 1.25;
     margin: auto 32px 32px 32px;
     transition: background 0.3s ease;
@@ -2424,7 +2400,6 @@ body.mobile-menu .mobileMenu {
 
 .pricingCards__footer {
     font-size: 24px;
-    font-weight: 500;
     line-height: 1.16;
     text-align: center;
 }
@@ -2449,7 +2424,6 @@ body.mobile-menu .mobileMenu {
 .checkoutHeader__text {
     color: #747B7F;
     font-size: 14px;
-    font-weight: 500;
     line-height: 1.28;
     margin-bottom: 16px;
 }
@@ -2579,12 +2553,10 @@ body.mobile-menu .mobileMenu {
 
 .checkout__sidebar_row span {
     line-height: 1.25;
-    font-weight: 500;
     font-size: 14px;
 }
 
 .checkout__sidebar_row span:last-child {
-    font-weight: 600;
     font-size: 16px;
 }
 
@@ -2602,7 +2574,6 @@ body.mobile-menu .mobileMenu {
 .checkout__sidebar_footer {
     padding: 28px 32px 28px 32px;
     font-size: 14px;
-    font-weight: 500;
     line-height: 1.25;
 }
 
@@ -2767,7 +2738,6 @@ body.mobile-menu .mobileMenu {
 
 .checkout__addon_value {
     font-size: 16px;
-    font-weight: 500;
     margin-bottom: 8px;
     line-height: 1.25;
 }
@@ -2865,7 +2835,6 @@ body.mobile-menu .mobileMenu {
 }
 
 .featuresList__item {
-    font-weight: 500;
     border: 1px solid #D8DEFD;
     padding: 16px 24px 16px 16px;
     display: flex;
@@ -3051,7 +3020,6 @@ body.mobile-menu .mobileMenu {
 
 .aboutFooter__text {
     margin-bottom: 32px;
-    font-weight: 500;
     color: #2C3647;
 }
 
