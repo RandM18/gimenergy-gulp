@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,500&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/custom-select.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+</head>
+
+<body class="policy-page">
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="index.html" class="header__logo"><img src="assets/img/logo-header.svg" alt="Logotype"></a>
+            <nav class="header__nav">
+                <ul class="menu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#" id="submenu-open">Products <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M4 6L8 10L12 6" stroke="#090909" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#email"></use>
+                                    </svg>
+                                    <span>Email manager</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#webform"></use>
+                                    </svg>
+                                    <span>Custom web and mobile forms</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#calendar"></use>
+                                    </svg>
+                                    <span>Schedule software</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#invoice"></use>
+                                    </svg>
+                                    <span>Smart Invoices</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#server"></use>
+                                    </svg>
+                                    <span>Web hosting</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#chat"></use>
+                                    </svg>
+                                    <span>Chat</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="contactus.html">Contact us <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M4 6L8 10L12 6" stroke="#090909" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>General Inquiry.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Open support ticket</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="#" class="rvbtn">Book a demo</a>
+                <a href="#" class="rvbtn">Login</a>
+                <button class="burger" id="burger"><span></span></button>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mobileMenu">
+    <ul class="mobileMenu__list">
+        <li class="mobileMenu__item"><a href="about.html" class="mobileMenu__link">About</a></li>
+        <li class="mobileMenu__item"><a href="features.html" class="mobileMenu__link">Features</a></li>
+        <li class="mobileMenu__item"><a href="pricing.html" class="mobileMenu__link">Pricing</a></li>
+        <li class="mobileMenu__item"><a href="#" class="mobileMenu__link mobileMenu__link-sub">Products
+                <svg width="10" height="6">
+                    <use xlink:href="/upp/assets/img/icons.svg#smallarrow"></use>
+                </svg>
+            </a>
+            <ul class="mobileMenu__submenu">
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#email"></use>
+                        </svg>
+                        <span>Email manager</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#webform"></use>
+                        </svg>
+                        <span>Custom web and mobile forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#calendar"></use>
+                        </svg>
+                        <span>Schedule software</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#invoice"></use>
+                        </svg>
+                        <span>Smart Invoices</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#server"></use>
+                        </svg>
+                        <span>Web hosting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#chat"></use>
+                        </svg>
+                        <span>Chat</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="mobileMenu__item"><a href="contactus.html" class="mobileMenu__link">Contact us</a></li>
+    </ul>
+    <div class="mobileMenu__actions">
+        <a href="#" class="rvbtn">Login</a>
+        <a href="#" class="rvbtn">Book a demo</a>
+    </div>
+
+</div>
+<main class="main" id="main">
+
+    <div class="singlehead">
+        <div class="container">
+            <div class="singlehead__wrapper">
+                <h1 class="rvtitle singlehead__title">Privacy Policy</h1>
+            </div>
+        </div>
+    </div>
+    <div class="textblock">
+        <div class="content">
+            <h2>Overview</h2>
+            <p>Uppointment takes the importance of your personal information very seriously, and we are committed to its protection. To
+            do that, we have established procedures to ensure that your personal and sensitive information is handled responsibly
+            and in accordance with relevant data protection and privacy laws. All Uppointment data are stored in secure and reliable
+            cloud servers. The Uppointment Privacy Policy describes what information we collect when you visit the network, how we
+            use that information, and how you can control that information.</p>
+            <h2>How Information is Collected</h2>
+            <p>Information we obtain from your use of our website is primarily non-personal information similar to that which servers,
+            web browsers, and services like Google Analytics typically make available. Other non-personal information that we might
+            have access to includes how you use the API (for example: particular fields requested for your website), cookies, your
+            approximate location, etc.
+            We collect this non-personally identifiable information to better understand how customers use the service, visitors use
+            the website, and improve user-experience. For example, we may monitor the most common content on the network to help
+            identify spam or abuse. In some cases, we may publicly display information that is not personally identifiable, (for
+            example: by posting a report on the most popular API requests, such as Services, Buffer Times, Prices and so on) or may
+            provide this information to third parties for educational or similar purposes other than for any sort of profit.
+            Occasionally, Uppointment might use this information to publicly display usage statistics. We may also collect your IP
+            address when you use Uppointment for the purpose of understanding the needs of our users.</p>
+            <h2>What Information is Collected</h2>
+            <p>Account Content - We use your account information to identify you as a business or individual. Your name, business name,
+            email and website addresses, and API usage.
+            Information voluntarily posted in publicly visible parts of Uppointment is considered to be public, even if it would
+            otherwise be considered as personally identifiable or sensitive. As such, it is not subject to the protocols listed
+            below. This is because we do not control such postings; you do. Additionally, voluntarily publicizing such information
+            means that you lose any privacy rights you might normally have with regards to that information. This also increases
+            your chances of receiving unwanted communications such as spam.
+            Uppointment will not provide your sensitive account information – including passwords, email addresses, financial
+            information or names – to any third party. We value your privacy, but we are not responsible if you choose to share your
+            sensitive information with anyone or any third party.
+            In addition to your activity inside Uppointment, we collect information about web browsers, and servers, as well as
+            information that services like Google Analytics typically make available, such as browser type, referral site, and
+            duration of each site visit.
+            We do not knowingly collect any personally identifiable information from children under the age of 16. If you believe
+            that a child has provided us with personally identifiable information without the consent of his or her parent or
+            guardian, please notify us via the contact form so we can investigate and take the necessary steps.</p>
+            <h2>Cookies and GDPR Regulation</h2>
+            <p>A cookie is a string of information that a website stores on a visitor’s computer and is provided to the website by the
+            visitor’s browser each time the visitor returns. Uppointment uses cookies to help track visitor preferences and use of
+            the network. If you use Uppointment and do not want cookies to be stored on your computer, it is your responsibility to
+            adjust your browser settings to turn off cookies. You should be aware that certain features of Uppointment may not
+            function properly without cookies enabled on your device.
+            Third party vendors, such as Google Ads, use cookies to serve ads based on a user’s prior visits. Use of the DoubleClick
+            cookie enables Google and its partners to serve ads to our users based on their visit to our site and/or other sites on
+            the internet. You may opt out of the use of the DoubleClick cookie for interest-based advertising by visiting Ad
+            Settings.
+            Note that Uppointment uses third party servers, software, and other products. Although Uppointmentis not affiliated with
+            these parties, you automatically agree to their terms and conditions when you use Uppointment products.
+            If you are located outside the United States, be aware that any personally identifiable information you enter into our
+            systems will be transferred out of your country and into the United States (and possibly other countries). By using
+            Uppointment, you consent to this transfer, and you are indicating that you have the right to transfer such information
+            outside of your country.
+            Uppointment acts in accordance to the GDPR Regulation (EU) 2016/679 of the European Parliament and of the Council of 27
+            April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement
+            of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) published at eur-lex.europa.eu</p>
+            <h2>Use of Collected Information</h2>
+            <p>If you are a registered user with Uppointment and have provided us with your email address, we may occasionally send you
+            an email to let you know about new features, solicit feedback, and keep you up to date on the latest news on
+            Uppointment. Note that if we do send you information that you did not specifically request, we will provide you with the
+            chance to voluntarily opt out of this service.
+            Security - Uppointment accepts credit cards, PayPal and Apple Pay as payment methods. Uppointment does not store any
+            credit card or financial information. All private financial and credit card information is stored securely by your
+            financial merchant, and you are subject to their terms and conditions and privacy policy.
+            Accuracy of Data - In addition to protecting your personal information, we also work to keep data up to date to the best
+            of our ability. Note that we are not responsible for inaccurate data submitted by our users. We are also not responsible
+            for any loss of data.
+            Access - Upon request, we will provide you with reasonable access to the personal information we collect about you. You
+            will have the opportunity to correct, update, modify, or delete the information by contacting us via ticket, chat or
+            email when available. Note that we may limit an individual’s access to personal information where the burden or expense
+            of providing access would be disproportionate to the risks to the individual’s privacy or where doing so would violate
+            the rights of others.
+            Enforcement - We will conduct internal audits of our compliance with this privacy policy. Uppointment administrators
+            take your privacy seriously, and we will take all reasonable measures against anyone found to be in violation of this
+            policy.</p>
+            <h2>Information We Will Never Ask For or Collect</h2>
+            <p>We do not intentionally collect sensitive personal information, such as social security numbers, financial information
+            including credit card, PayPal and Apple Pay information, genetic data, health information, or religious affiliation
+            information. Although we do not intentionally collect this sensitive personal information, we realize that you might
+            store this kind of information somewhere in your account. If you store any sensitive personal information on the
+            Uppointment servers, you are consenting to our storage of that information on our servers, which are located in the
+            U.S., and we are not responsible for that information.</p>
+            <h2>Unanswered Privacy Concerns</h2>
+            <p>If you have other questions about privacy, or anything else contained in the Uppointment Privacy Policy, please contact
+            us via ticket, chat or email.</p>
+        </div>
+    </div>
+</main>
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <form action="#" class="subscribe">
+                    <input type="text" placeholder="Subscribe to our newsletter">
+                    <input type="submit" value="Send">
+                </form>
+                <div class="footer__corp">© 2023 Uppointment All Rights Reserved</div>
+            </div>
+            <div class="footer__body">
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <ul>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="cases.html">Use cases</a></li>
+                    <li><a href="features.html">Features</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__right">
+                <img src="assets/img/logo-footer.svg" alt="logotype" class="footer__logo">
+                <ul class="socials">
+                    <li><a href="#"><img src="assets/img/soc-x.svg" alt="icon"></a></li>
+                    <li><a href="#"><img src="assets/img/soc-in.svg" alt="icon"></a></li>
+                    <li><a href="#"><img src="assets/img/soc-yt.svg" alt="icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/chosen.jquery.min.js"></script>
+<script src="assets/js/main.min.js?v=1"></script>
+
+</body>
+
+</html>

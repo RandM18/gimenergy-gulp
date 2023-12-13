@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,500&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/custom-select.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+</head>
+
+<body class="pricing-page">
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="index.html" class="header__logo"><img src="assets/img/logo-header.svg" alt="Logotype"></a>
+            <nav class="header__nav">
+                <ul class="menu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#" id="submenu-open">Products <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M4 6L8 10L12 6" stroke="#090909" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#email"></use>
+                                    </svg>
+                                    <span>Email manager</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#webform"></use>
+                                    </svg>
+                                    <span>Custom web and mobile forms</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#calendar"></use>
+                                    </svg>
+                                    <span>Schedule software</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#invoice"></use>
+                                    </svg>
+                                    <span>Smart Invoices</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#server"></use>
+                                    </svg>
+                                    <span>Web hosting</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#chat"></use>
+                                    </svg>
+                                    <span>Chat</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="contactus.html">Contact us <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M4 6L8 10L12 6" stroke="#090909" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>General Inquiry.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Open support ticket</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="#" class="rvbtn">Book a demo</a>
+                <a href="#" class="rvbtn">Login</a>
+                <button class="burger" id="burger"><span></span></button>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mobileMenu">
+    <ul class="mobileMenu__list">
+        <li class="mobileMenu__item"><a href="about.html" class="mobileMenu__link">About</a></li>
+        <li class="mobileMenu__item"><a href="features.html" class="mobileMenu__link">Features</a></li>
+        <li class="mobileMenu__item"><a href="pricing.html" class="mobileMenu__link">Pricing</a></li>
+        <li class="mobileMenu__item"><a href="#" class="mobileMenu__link mobileMenu__link-sub">Products
+                <svg width="10" height="6">
+                    <use xlink:href="/upp/assets/img/icons.svg#smallarrow"></use>
+                </svg>
+            </a>
+            <ul class="mobileMenu__submenu">
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#email"></use>
+                        </svg>
+                        <span>Email manager</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#webform"></use>
+                        </svg>
+                        <span>Custom web and mobile forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#calendar"></use>
+                        </svg>
+                        <span>Schedule software</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#invoice"></use>
+                        </svg>
+                        <span>Smart Invoices</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#server"></use>
+                        </svg>
+                        <span>Web hosting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#chat"></use>
+                        </svg>
+                        <span>Chat</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="mobileMenu__item"><a href="contactus.html" class="mobileMenu__link">Contact us</a></li>
+    </ul>
+    <div class="mobileMenu__actions">
+        <a href="#" class="rvbtn">Login</a>
+        <a href="#" class="rvbtn">Book a demo</a>
+    </div>
+
+</div>
+<main class="main" id="main">
+    <div class="mainhead">
+        <div class="container">
+            <div class="mainhead__wrapper">
+                <h1 class="rvtitle mainhead__title"><div class="mainhead__title_row mainhead__title_row-2">Start your <span>free</span> trial</div></h1>
+                <div class="mainhead__text">Unlimited users and boards. No credit card needed.</div>
+            </div>
+        </div>
+    </div>
+    <div class="mainpricing">
+        <div class="container">
+            <div class="swiper mainpricing__cards">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <label class="pricingcard">
+                            <input type="radio" name="pricingcard" class="inp">
+                            <span></span>
+                            <div class="pricingcard__icon">
+                                <svg width="32" height="32">
+                                    <use xlink:href="/upp/assets/img/icons.svg#email"></use>
+                                </svg>
+                            </div>
+                            <div class="pricingcard__title">Email campaigns and manager</div>
+                            <div class="pricingcard__footer">From $<span>20</span> / month</div>
+                        </label>
+                    </div>
+                    <div class="swiper-slide">
+                        <label class="pricingcard">
+                            <input type="radio" name="pricingcard" class="inp">
+                            <span></span>
+                            <div class="pricingcard__icon">
+                                <svg width="32" height="32">
+                                    <use xlink:href="/upp/assets/img/icons.svg#calendar"></use>
+                                </svg>
+                            </div>
+                            <div class="pricingcard__title">Schedule<br> software</div>
+                            <div class="pricingcard__footer">From $<span>42</span> / month</div>
+                        </label>
+                    </div>
+                    <div class="swiper-slide">
+                        <label class="pricingcard">
+                            <input type="radio" name="pricingcard" class="inp">
+                            <span></span>
+                            <div class="pricingcard__icon">
+                                <svg width="32" height="32">
+                                    <use xlink:href="/upp/assets/img/icons.svg#server"></use>
+                                </svg>
+                            </div>
+                            <div class="pricingcard__title">Web<br> hosting</div>
+                            <div class="pricingcard__footer">From $<span>28</span> / month</div>
+                        </label>
+                    </div>
+                    <div class="swiper-slide">
+                        <label class="pricingcard">
+                            <input type="radio" name="pricingcard" class="inp">
+                            <span></span>
+                            <div class="pricingcard__icon">
+                                <svg width="32" height="32">
+                                    <use xlink:href="/upp/assets/img/icons.svg#webform"></use>
+                                </svg>
+                            </div>
+                            <div class="pricingcard__title">Custom web and<br> mobile forms</div>
+                            <div class="pricingcard__footer">From $<span>20</span> / month</div>
+                        </label>
+                    </div>
+                    <div class="swiper-slide">
+                        <label class="pricingcard">
+                            <input type="radio" name="pricingcard" class="inp">
+                            <span></span>
+                            <div class="pricingcard__icon">
+                                <svg width="32" height="32">
+                                    <use xlink:href="/upp/assets/img/icons.svg#invoice"></use>
+                                </svg>
+                            </div>
+                            <div class="pricingcard__title">Smart <br>Invoices</div>
+                            <div class="pricingcard__footer">From $<span>10</span> / month</div>
+                        </label>
+                    </div>
+                    <div class="swiper-slide">
+                        <label class="pricingcard">
+                            <input type="radio" name="pricingcard" class="inp">
+                            <span></span>
+                            <div class="pricingcard__icon">
+                                <svg width="32" height="32">
+                                    <use xlink:href="/upp/assets/img/icons.svg#chat"></use>
+                                </svg>
+                            </div>
+                            <div class="pricingcard__title">Automatic <br>Chat</div>
+                            <div class="pricingcard__footer">From $<span>14</span> / month</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="pricingCards" style="display: none;">
+                <div class="rvtitle pricingCards__title">Select your plan</div>
+                <div class="pricingCards__header">
+                    <div class="pricingCards__header_item">
+                        <span>Choose team size:</span>
+                        <select name="" id="teamsize" class="selectbox">
+                            <option value="3 seats">3 seats</option>
+                            <option value="4 seats">4 seats</option>
+                            <option value="5 seats">5 seats</option>
+                        </select>
+                    </div>
+                    <div class="pricingCards__header_item">
+                        <span>Choose admin size:</span>
+                        <select name="" id="adminsize" class="selectbox">
+                            <option value="3 seats">3 seats</option>
+                            <option value="4 seats">4 seats</option>
+                            <option value="5 seats">5 seats</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pricingCards__body">
+                    <div class="pricingCards__item">
+                        <div class="pricingCards__item_header">
+                            <div class="rvtitle pricingCards__item_title">Premium</div>
+                            <div class="pricingCards__item_price">$ <span>28</span> / month</div>
+                        </div>
+                        <ul class="pricingCards__item_lists">
+                            <li class="pricingCards__item_list">1 Site</li>
+                            <li class="pricingCards__item_list">Unlimited testing sites</li>
+                            <li class="pricingCards__item_list">Up to 20,000 Visits/month</li>
+                            <li class="pricingCards__item_list">10 GB Storage</li>
+                            <li class="pricingCards__item_list">50 GB Bandwidth/month</li>
+                            <li class="pricingCards__item_list">Daily automated file backups</li>
+                            <li class="pricingCards__item_list">Proactive external monitoring</li>
+                            <li class="pricingCards__item_list">Unmetered disk space & traffic</li>
+                            <li class="pricingCards__item_list">Chat and ticket support</li>
+                            <li class="pricingCards__item_list">One-time setup and migration fee of $125</li>
+                        </ul>
+                        <a href="checkout.html" class="pricingCards__item_btn">Order now</a>
+                    </div>
+                    <div class="pricingCards__item recomend">
+                        <div class="pricingCards__item_header">
+                            <div class="rvtitle pricingCards__item_title">Premium Plus</div>
+                            <div class="pricingCards__item_price">$ <span>28</span> / month</div>
+                        </div>
+                        <ul class="pricingCards__item_lists">
+                            <li class="pricingCards__item_list">Up to 3 Sites</li>
+                            <li class="pricingCards__item_list">Unlimited testing sites</li>
+                            <li class="pricingCards__item_list">Up to 100,000 Visits/month</li>
+                            <li class="pricingCards__item_list">16 GB Storage</li>
+                            <li class="pricingCards__item_list">150 GB Bandwidth/month</li>
+                            <li class="pricingCards__item_list">Automated five days of DB and file backups every 8 hours.</li>
+                            <li class="pricingCards__item_list">Proactive external monitoring</li>
+                            <li class="pricingCards__item_list">Unmetered disk space & traffic</li>
+                            <li class="pricingCards__item_list">Priority chat and ticket support</li>
+                            <li class="pricingCards__item_list">One-time setup and site migration fee of $95</li>
+                        </ul>
+                        <a href="checkout.html" class="pricingCards__item_btn">Order now</a>
+                    </div>
+                    <div class="pricingCards__item">
+                        <div class="pricingCards__item_header">
+                            <div class="rvtitle pricingCards__item_title">Pro plus</div>
+                            <div class="pricingCards__item_price">$ <span>28</span> / month</div>
+                        </div>
+                        <ul class="pricingCards__item_lists">
+                            <li class="pricingCards__item_list">Up to 10 Sites</li>
+                            <li class="pricingCards__item_list">Unlimited testing sites</li>
+                            <li class="pricingCards__item_list">Unlimited Visits/month</li>
+                            <li class="pricingCards__item_list">25 GB Storage</li>
+                            <li class="pricingCards__item_list">200 GB Bandwidth/month</li>
+                            <li class="pricingCards__item_list">Automated seven days of DB and file backups every 4 hours.</li>
+                            <li class="pricingCards__item_list">Priority chat and phone support</li>
+                            <li class="pricingCards__item_list">Dedicated technical support manager</li>
+                            <li class="pricingCards__item_list">Application Performance Monitoring</li>
+                            <li class="pricingCards__item_list">FREE server setup and site migration</li>
+                        </ul>
+                        <a href="checkout.html" class="pricingCards__item_btn">Order now</a>
+                    </div>
+                </div>
+                <div class="pricingCards__footer">
+                    14 days free trial then 60-day money-back guarantee.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sfaq">
+        <div class="container">
+            <div class="sfaq__wrapper">
+                <div class="rvtitle sfaq__title">Frequently Asked Questions</div>
+                <div class="sfaq__box">
+                    <ul class="sfaq__links">
+                        <li><a href="#" data-tab="0" class='active' ><svg width="24" height="24">
+    <use xlink:href="/upp/assets/img/icons.svg#chat2"></use>
+</svg>General FAQ's</a></li><li><a href="#" data-tab="1"  ><svg width="24" height="24">
+    <use xlink:href="/upp/assets/img/icons.svg#registration"></use>
+</svg>Registration</a></li><li><a href="#" data-tab="2"  ><svg width="24" height="24">
+    <use xlink:href="/upp/assets/img/icons.svg#booking"></use>
+</svg>Scheduling / Booking form</a></li><li><a href="#" data-tab="3"  ><svg width="24" height="24">
+    <use xlink:href="/upp/assets/img/icons.svg#settings"></use>
+</svg>Managing Users and Locations</a></li><li><a href="#" data-tab="4"  ><svg width="24" height="24">
+    <use xlink:href="/upp/assets/img/icons.svg#card"></use>
+</svg>Blling</a></li><li><a href="#" data-tab="5"  ><svg width="24" height="24">
+    <use xlink:href="/upp/assets/img/icons.svg#api"></use>
+</svg>API and sharing</a></li>
+                    </ul>
+                    <div class="swiper sfaq__tabs">
+                        <div class="swiper-wrapper">
+                            
+                                <div class="swiper-slide">
+                                    <div class="faqItem">
+    <div class="faqItem__header">Getting started</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">After account deleted, how long I can use it</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">How to install ?</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">Where can I find templates for free website?</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">After account deleted, how long I can use it</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div>
+                                </div>
+                            
+                                <div class="swiper-slide">
+                                    <div class="faqItem">
+    <div class="faqItem__header">Getting started</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">After account deleted, how long I can use it</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">How to install ?</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">Where can I find templates for free website?</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">After account deleted, how long I can use it</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div>
+                                </div>
+                            
+                                <div class="swiper-slide">
+                                    <div class="faqItem">
+    <div class="faqItem__header">Getting started</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">After account deleted, how long I can use it</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">How to install ?</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">Where can I find templates for free website?</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">After account deleted, how long I can use it</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div>
+                                </div>
+                            
+                                <div class="swiper-slide">
+                                    <div class="faqItem">
+    <div class="faqItem__header">Getting started</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">After account deleted, how long I can use it</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">How to install ?</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">Where can I find templates for free website?</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">After account deleted, how long I can use it</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div>
+                                </div>
+                            
+                                <div class="swiper-slide">
+                                    <div class="faqItem">
+    <div class="faqItem__header">Getting started</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">After account deleted, how long I can use it</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">How to install ?</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">Where can I find templates for free website?</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">After account deleted, how long I can use it</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div>
+                                </div>
+                            
+                                <div class="swiper-slide">
+                                    <div class="faqItem">
+    <div class="faqItem__header">Getting started</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">After account deleted, how long I can use it</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">How to install ?</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">Where can I find templates for free website?</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div><div class="faqItem">
+    <div class="faqItem__header">After account deleted, how long I can use it</div>
+    <div class="faqItem__body" style="display:none;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt
+    </div>
+</div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainform">
+    <div class="mainform__left">
+        <div class="box">
+            <div class="rvtitle mainform__title">Focus on your business.</div>
+            <div class="mainform__text">All our14 days free trial!<br> You won't be charged until xx/xx</div>
+        </div>
+    </div>
+    <div class="mainform__right">
+        <div class="box">
+            <div class="rvtitle mainform__title">Book a call</div>
+            <form action="#" class="mainform__form">
+                <div class="input">
+                    <label for="fullname" class="input__label">Full name</label>
+                    <input type="text" class="input__textbox" placeholder="Full name" name="fullname" id="fullname">
+                </div>
+                <div class="input">
+                    <label for="company" class="input__label">Company name</label>
+                    <input type="text" class="input__textbox" placeholder="Company name" name="company" id="company">
+                </div>
+                <div class="input">
+                    <label for="business" class="input__label">Business type</label>
+                    <input type="text" class="input__textbox" placeholder="Business type" name="business" id="business">
+                </div>
+                <div class="input">
+                    <label for="email" class="input__label">Email</label>
+                    <input type="text" class="input__textbox" placeholder="Email" name="email" id="email">
+                </div>
+                <div class="input">
+                    <label for="phone" class="input__label">Phone</label>
+                    <input type="text" class="input__textbox" placeholder="Phone" name="phone" id="phone">
+                </div>
+                <div class="input__btn">
+                    <input type="submit" value="Select date and time">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    
+</main>
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <form action="#" class="subscribe">
+                    <input type="text" placeholder="Subscribe to our newsletter">
+                    <input type="submit" value="Send">
+                </form>
+                <div class="footer__corp">© 2023 Uppointment All Rights Reserved</div>
+            </div>
+            <div class="footer__body">
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <ul>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="cases.html">Use cases</a></li>
+                    <li><a href="features.html">Features</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__right">
+                <img src="assets/img/logo-footer.svg" alt="logotype" class="footer__logo">
+                <ul class="socials">
+                    <li><a href="#"><img src="assets/img/soc-x.svg" alt="icon"></a></li>
+                    <li><a href="#"><img src="assets/img/soc-in.svg" alt="icon"></a></li>
+                    <li><a href="#"><img src="assets/img/soc-yt.svg" alt="icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/chosen.jquery.min.js"></script>
+<script src="assets/js/main.min.js?v=1"></script>
+
+</body>
+
+</html>

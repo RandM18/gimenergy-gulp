@@ -23,7 +23,7 @@ const changed = require("gulp-changed");
 
 // Paths
 const srcPath = "src/";
-const distPath = "dist/";
+const distPath = "dist/upp/";
 
 const path = {
     build: {
@@ -53,7 +53,8 @@ const path = {
 function serve() {
     browserSync.init({
         server: {
-            baseDir: "./" + distPath,
+            // baseDir: "./" + distPath,
+            baseDir: "./dist/",
         },
     });
 }
