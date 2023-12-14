@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,500&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/custom-select.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+</head>
+
+<body class="contacts-page">
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="index.html" class="header__logo"><img src="assets/img/logo-header.svg" alt="Logotype"></a>
+            <nav class="header__nav">
+                <ul class="menu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#" id="submenu-open">Products <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M4 6L8 10L12 6" stroke="#090909" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#email"></use>
+                                    </svg>
+                                    <span>Email manager</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#webform"></use>
+                                    </svg>
+                                    <span>Custom web and mobile forms</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#calendar"></use>
+                                    </svg>
+                                    <span>Schedule software</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#invoice"></use>
+                                    </svg>
+                                    <span>Smart Invoices</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#server"></use>
+                                    </svg>
+                                    <span>Web hosting</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use xlink:href="/upp/assets/img/icons.svg#chat"></use>
+                                    </svg>
+                                    <span>Chat</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="contacts.html">Contact us <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M4 6L8 10L12 6" stroke="#090909" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>General Inquiry.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Open support ticket</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="#" class="rvbtn">Book a demo</a>
+                <a href="#" class="rvbtn">Login</a>
+                <button class="burger" id="burger"><span></span></button>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mobileMenu">
+    <ul class="mobileMenu__list">
+        <li class="mobileMenu__item"><a href="about.html" class="mobileMenu__link">About</a></li>
+        <li class="mobileMenu__item"><a href="features.html" class="mobileMenu__link">Features</a></li>
+        <li class="mobileMenu__item"><a href="pricing.html" class="mobileMenu__link">Pricing</a></li>
+        <li class="mobileMenu__item"><a href="#" class="mobileMenu__link mobileMenu__link-sub">Products
+                <svg width="10" height="6">
+                    <use xlink:href="/upp/assets/img/icons.svg#smallarrow"></use>
+                </svg>
+            </a>
+            <ul class="mobileMenu__submenu">
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#email"></use>
+                        </svg>
+                        <span>Email manager</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#webform"></use>
+                        </svg>
+                        <span>Custom web and mobile forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#calendar"></use>
+                        </svg>
+                        <span>Schedule software</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#invoice"></use>
+                        </svg>
+                        <span>Smart Invoices</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#server"></use>
+                        </svg>
+                        <span>Web hosting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32">
+                            <use xlink:href="/upp/assets/img/icons.svg#chat"></use>
+                        </svg>
+                        <span>Chat</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="mobileMenu__item"><a href="contacts.html" class="mobileMenu__link">Contact us</a></li>
+    </ul>
+    <div class="mobileMenu__actions">
+        <a href="#" class="rvbtn">Login</a>
+        <a href="#" class="rvbtn">Book a demo</a>
+    </div>
+
+</div>
+<main class="main" id="main">
+    <div class="s-contacts">
+        <div class="s-contacts__left">
+            <div class="box">
+                <div class="s-contacts__label">General Inquiry.</div>
+                <div class="rvtitle s-contacts__title">Contact us if you have questions.</div>
+            </div>
+        </div>
+        <div class="s-contacts__right">
+
+            <form action="#" class="s-contacts__form">
+                <div class="box">
+                    <label for="fullname">Contact name</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Full name" class="textbox" required>
+                </div>
+                <div class="box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" class="textbox" required>
+                </div>
+                <div class="box">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" placeholder="Phone" class="textbox" required>
+                </div>
+                <div class="box">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" class="textbox" placeholder="How we can help you?" required></textarea>
+                </div>
+                <div class="box">
+                    <p>By submitting this form I accept the Privacy Policy and Terms of Use</p>
+                </div>
+                <div class="box">
+                    <input type="submit" class="rvbtn" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <form action="#" class="subscribe">
+                    <input type="text" placeholder="Subscribe to our newsletter">
+                    <input type="submit" value="Send">
+                </form>
+                <div class="footer__corp">© 2023 Uppointment All Rights Reserved</div>
+            </div>
+            <div class="footer__body">
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <ul>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="cases.html">Use cases</a></li>
+                    <li><a href="features.html">Features</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__right">
+                <img src="assets/img/logo-footer.svg" alt="logotype" class="footer__logo">
+                <ul class="socials">
+                    <li><a href="#"><img src="assets/img/soc-x.svg" alt="icon"></a></li>
+                    <li><a href="#"><img src="assets/img/soc-in.svg" alt="icon"></a></li>
+                    <li><a href="#"><img src="assets/img/soc-yt.svg" alt="icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/chosen.jquery.min.js"></script>
+<script src="assets/js/main.min.js?v=1"></script>
+
+</body>
+
+</html>

@@ -49,6 +49,9 @@ jQuery(function ($) {
             el: "#mainslider-page",
             clickable: true,
         },
+        navigation: {
+            nextEl: "#mainslider-swiper-small-next",
+        },
         thumbs: {
             swiper: mainsliderText,
         },
@@ -110,16 +113,15 @@ jQuery(function ($) {
             .to("#maincards-cart", { duration: 0.2, x: 0 });
 
         $(".front-page .maincard input").on("change", function (e) {
-            let c = $("#maincards-cart .count"),
-                count = $(".maincard input:checked").length;
-            c.html(count);
+            let count = $(".maincard input:checked").length;
+            // c.html(count);
             maincardBtnAnim.restart();
             if (count > 0) {
-                c.show();
-                $("#maincards-cart .text").text("Continue");
+                $("#maincards-cart .text").html(
+                    "Continues with <span class='count'>"+count+"</span> business tool"
+                );
             } else {
-                c.hide();
-                $("#maincards-cart .text").text("Sign up now");
+                $("#maincards-cart .text").html("Sign up now");
             }
             if (!$(this).prop("checked")) {
                 $(this).parent().removeClass("active");
@@ -154,16 +156,12 @@ jQuery(function ($) {
             .to("#mainpricing-cart", { duration: 0.2, x: 0 });
 
         $(".front-page .pricingcard input").on("change", function (e) {
-            let c = $("#mainpricing-cart .count"),
-                count = $(".pricingcard input:checked").length;
-            c.html(count);
+            let count = $(".pricingcard input:checked").length;
             pricingBtnAnim.restart();
             if (count > 0) {
-                c.show();
-                $("#mainpricing-cart .text").text("Continue");
+                $("#mainpricing-cart .text").html("Continues with <span class='count'>"+count+"</span> business tool");
             } else {
-                c.hide();
-                $("#mainpricing-cart .text").text("Let's go");
+                $("#mainpricing-cart .text").html("Let's go");
             }
             if (!$(this).prop("checked")) {
                 $(this).parent().removeClass("active");
@@ -292,6 +290,14 @@ jQuery(function ($) {
         $(".checkoutHeader__item:eq(2)").addClass("active");
     });
 
+    $(".terms__actions").on('click', '.terms__link', function(e){
+        e.preventDefault();
+        let tab = $(this).attr('href');
+        $(".terms__link").not($(this)).removeClass('active');
+        $(this).addClass('active');
+        $('.terms__tab').not(tab).hide();
+        $(tab).show();
+    });
   
     // GSAP
     if($('.mainparallax').length>0){
@@ -365,7 +371,7 @@ jQuery(function ($) {
 
 
     if($('.featuresList').length>0){
-        $(".featuresList__item").each(function(){
+        $(".featuresList__row").each(function(){
             gsap.to($(this), {
                 scrollTrigger: {
                     trigger: $(this),
