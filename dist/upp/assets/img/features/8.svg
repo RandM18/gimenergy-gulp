@@ -1,1 +1,7 @@
-<svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="x-circle 1" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path id="Vector" d="M12.333 22c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10z"/><path id="Vector_2" d="M15.333 9l-6 6"/><path id="Vector_3" d="M9.333 9l6 6"/></g></svg>
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="x-circle 1">
+<path id="Vector" d="M12.333 22C17.8559 22 22.333 17.5228 22.333 12C22.333 6.47715 17.8559 2 12.333 2C6.81016 2 2.33301 6.47715 2.33301 12C2.33301 17.5228 6.81016 22 12.333 22Z" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M15.333 9L9.33301 15" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M9.33301 9L15.333 15" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

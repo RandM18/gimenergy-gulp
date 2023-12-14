@@ -1,1 +1,9 @@
-<svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="9024194_binoculars_light_icon 1" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path id="Vector" d="M9.75 8.625h4.5"/><path id="Vector_2" d="M21.525 14.466l-4.097-9.31a2.26 2.26 0 00-3.178 0V15.75"/><path id="Vector_3" d="M9.752 15.75V5.156a2.26 2.26 0 00-3.179 0l-4.096 9.31"/><path id="Vector_4" d="M6 19.5A3.75 3.75 0 106 12a3.75 3.75 0 000 7.5z"/><path id="Vector_5" d="M18 19.5a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"/></g></svg>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="9024194_binoculars_light_icon 1">
+<path id="Vector" d="M9.75 8.625H14.25" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M21.525 14.4655L17.4281 5.15617C17.0051 4.73767 16.4341 4.50293 15.8391 4.50293C15.244 4.50293 14.673 4.73767 14.25 5.15617V15.7499" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M9.75156 15.7499V5.15617C9.32856 4.73767 8.75754 4.50293 8.1625 4.50293C7.56746 4.50293 6.99644 4.73767 6.57344 5.15617L2.47656 14.4655" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M6 19.5C8.07107 19.5 9.75 17.8211 9.75 15.75C9.75 13.6789 8.07107 12 6 12C3.92893 12 2.25 13.6789 2.25 15.75C2.25 17.8211 3.92893 19.5 6 19.5Z" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M18 19.5C20.0711 19.5 21.75 17.8211 21.75 15.75C21.75 13.6789 20.0711 12 18 12C15.9289 12 14.25 13.6789 14.25 15.75C14.25 17.8211 15.9289 19.5 18 19.5Z" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

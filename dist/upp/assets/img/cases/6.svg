@@ -1,1 +1,5 @@
-<svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="droplet 1"><path id="Vector" d="M12.667 2.69l5.66 5.66a8 8 0 11-11.31 0l5.65-5.66z" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="droplet 1">
+<path id="Vector" d="M12.6669 2.68994L18.3269 8.34994C19.4462 9.46855 20.2087 10.894 20.5178 12.446C20.8269 13.998 20.6688 15.6068 20.0634 17.0689C19.4581 18.531 18.4327 19.7808 17.117 20.66C15.8013 21.5393 14.2544 22.0086 12.6719 22.0086C11.0894 22.0086 9.54248 21.5393 8.22677 20.66C6.91106 19.7808 5.88569 18.531 5.28034 17.0689C4.67499 15.6068 4.51687 13.998 4.82598 12.446C5.13509 10.894 5.89753 9.46855 7.01688 8.34994L12.6669 2.68994Z" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

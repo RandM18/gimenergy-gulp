@@ -2377,6 +2377,9 @@ body.mobile-menu{
         @media(max-width: #{$maxWidthContainer}px){
             padding-left: 15px;
         }
+        @media(max-width: 768px){
+            order:2;
+        }
         
     }
 
@@ -2425,6 +2428,7 @@ body.mobile-menu{
         @media(max-width: 768px){
             flex:1 1 auto;
             padding: 15px;
+            height: 444px;
         }
     }
 }
@@ -2489,6 +2493,9 @@ body.mobile-menu{
         .rvbtn{
             max-width: 210px;
             width: 100%;
+            @media(max-width: 580px){
+                max-width: 100%;
+            }
         }
         @media(max-width: 580px){
             flex-wrap: wrap;
@@ -2958,6 +2965,10 @@ body.mobile-menu{
     padding: 120px 0px;
     background-color: #fff;
     text-align: center;
+    @media(max-width: 768px){
+        padding: 64px 0px;
+        text-align: left;
+    }
     // .s-textsection__title
 
     &__title {
@@ -2978,6 +2989,9 @@ body.mobile-menu{
 
 .s-leftposter {
     display: flex;
+    @media(max-width: 768px){
+        flex-direction: column;
+    }
     // .s-leftposter__poster
 
     &__poster {
@@ -2987,6 +3001,10 @@ body.mobile-menu{
         padding-left: calc((100vw - (#{$maxWidthContainer}px)) / 2);
         @media(max-width: #{$maxWidthContainer}px){
             padding-left: 15px;
+        }
+        @media(max-width: 768px){
+            flex:1 1 auto;
+            height: 444px;
         }
         position: relative;
         img{
@@ -3012,6 +3030,10 @@ body.mobile-menu{
     
         @media(max-width: #{$maxWidthContainer}px) {
             padding-right: 15px;
+        }
+        @media(max-width: 768px){
+            padding-top: 40px;
+            padding-bottom: 64px;
         }
 
         .box{
