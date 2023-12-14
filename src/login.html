@@ -1,0 +1,56 @@
+@@include('tpl/head.html', {class:"login-page"})
+@@include('tpl/header.html')
+<main class="main" id="main">
+    <div class="fullpage">
+        <div class="container">
+            <div class="fullpage__wrapper">
+                <form action="#" class="fullpage__form">
+                    <div class="rvtitle fullpage__form_title">Log in</div>
+                    <div class="fullpage__form_text">Need a new account? <a href="#">Create now</a></div>
+                    <div class="box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="textbox" placeholder="Email">
+                    </div>
+                    <div class="box">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="textbox" placeholder="Password">
+                    </div>
+                    <div class="box">
+                        <label class="checkbox">
+                            <input type="checkbox" name="keep" id="keep">
+                            <span></span>
+                            Keep me logged in
+                        </label>
+                    </div>
+                    <div class="box">
+                        <input type="submit" value="Login" class="rvbtn">
+                    </div>
+                    <div class="box center">
+                        <p>or continue with</p>
+                        <a href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="38" height="38" rx="19" stroke="#090909" stroke-width="2" />
+                                <path
+                                    d="M25 11.667H22.5C21.3949 11.667 20.3351 12.106 19.5537 12.8874C18.7723 13.6688 18.3333 14.7286 18.3333 15.8337V18.3337H15.8333V21.667H18.3333V28.3337H21.6666V21.667H24.1666L25 18.3337H21.6666V15.8337C21.6666 15.6126 21.7544 15.4007 21.9107 15.2444C22.067 15.0881 22.279 15.0003 22.5 15.0003H25V11.667Z"
+                                    fill="#090909" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="38" height="38" rx="19" stroke="#090909" stroke-width="2" />
+                                <path
+                                    d="M27.8418 18.439C25.2278 18.4377 22.6138 18.4383 19.9999 18.4386C20.0002 19.5229 19.9986 20.6071 20.0005 21.6909C21.5143 21.6906 23.0282 21.6903 24.5417 21.6909C24.3663 22.7299 23.7488 23.68 22.8733 24.2649C22.3228 24.635 21.6904 24.8752 21.0385 24.9894C20.3823 25.1014 19.7043 25.1157 19.0498 24.9832C18.3841 24.8504 17.7488 24.5731 17.1945 24.1822C16.3082 23.5595 15.6318 22.6485 15.2845 21.6232C14.9294 20.5803 14.9268 19.4199 15.2861 18.3781C15.5355 17.6438 15.9505 16.9655 16.4956 16.4134C17.1681 15.725 18.0424 15.2329 18.9843 15.0311C19.7909 14.8589 20.6414 14.8918 21.431 15.1307C22.1022 15.3344 22.7209 15.7022 23.2277 16.1862C23.74 15.6768 24.2497 15.1645 24.7611 14.6542C25.0293 14.3795 25.3112 14.1168 25.5709 13.8346C24.7943 13.1159 23.8839 12.5382 22.8892 12.173C21.0984 11.5139 19.0787 11.4999 17.2758 12.1239C15.2441 12.8195 13.5142 14.3388 12.555 16.2592C12.221 16.9209 11.9772 17.6272 11.8308 18.3537C11.4623 20.1637 11.7191 22.0936 12.554 23.7422C13.0966 24.8182 13.8745 25.7748 14.8181 26.5248C15.7083 27.2346 16.746 27.759 17.8461 28.0516C19.2343 28.424 20.712 28.4155 22.1094 28.0975C23.3723 27.8069 24.5671 27.2034 25.5211 26.3226C26.5295 25.396 27.2488 24.1751 27.6296 22.863C28.045 21.4319 28.1022 19.904 27.8418 18.439Z"
+                                    fill="#090909" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="box center">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+@@include('tpl/footer.html')
+@@include('tpl/foot.html')
