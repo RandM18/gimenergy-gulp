@@ -6,6 +6,11 @@ jQuery(function ($) {
     $(".mobileMenu__link-sub").on("click", function (e) {
         $(this).toggleClass("active");
     });
+    $('.menu li ul').each(function(e){
+        if($(this).find('li').length < 4){
+            $(this).addClass('small');
+        }
+    });
 
     const onScrollHeader = () => {
         const header = $(".header");
@@ -297,6 +302,17 @@ jQuery(function ($) {
         $(this).addClass('active');
         $('.terms__tab').not(tab).hide();
         $(tab).show();
+    });
+
+    $(".s-contacts__form").on('submit', function(e){
+        e.preventDefault();
+        $(this).hide();
+        $(".s-contacts__ty").show();
+    });
+
+    $(".s-programExp__item").on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass("active").find(".s-programExp__item_body").slideToggle();
     });
   
     // GSAP
