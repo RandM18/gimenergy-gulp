@@ -88,7 +88,7 @@
                         <ul>
                             <li>
                                 <a href="contacts.html">
-                                    <span>General Inquiry.</span>
+                                    <span>General Inquiry</span>
                                 </a>
                             </li>
                             <li>
@@ -188,8 +188,7 @@
     </div>
     <div class="maincards">
         <div class="container">
-            <!-- <div class="maincards__grid"> -->
-                <div class="swiper maincards__grid2">
+            <div class="swiper maincards__grid">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <label class="maincard">
@@ -263,9 +262,6 @@
                 </div>
                 
                 
-                
-                
-            <!-- </div> -->
             <div class="maincards__footer">
                 <a href="#" class="rvbtn" id="maincards-cart"><span class="text">Sign up now</span>
                     <svg width="18" height="8">
@@ -378,10 +374,16 @@
                     <div>
                         <a href="#" class="mainslider__link">See all services
                             <svg width="18" height="8">
-                            <use xlink:href="/upp/assets/img/icons.svg#arrow"></use>
-                        </svg>
+                                <use xlink:href="/upp/assets/img/icons.svg#arrow"></use>
+                            </svg>
                         </a>
-                        <div class="swiper-pagination" id="mainslider-page"></div>
+                        <div class="swiper-actions">
+                            <button class="swiper-pause" id="mainslider-pause">
+                                ||
+                            </button>
+                            <button class="swiper-play" id="mainslider-start">></button>
+                            <div class="swiper-pagination" id="mainslider-page"></div>
+                        </div>
                     </div>
                     <div class="swiper mainslider-swiper-small">
                         <div class="swiper-wrapper">
@@ -390,6 +392,7 @@
                             <div class="swiper-slide"><img src="assets/img/slide-3-s.svg" alt="poster"></div>
                             <div class="swiper-slide"><img src="assets/img/slide-4-s.svg" alt="poster"></div>
                         </div>
+                        <div class="mainslider-swiper-small-prev" id="mainslider-swiper-small-prev">Previous</div>
                         <div class="mainslider-swiper-small-next" id="mainslider-swiper-small-next">Next</div>
                     </div>
 
@@ -577,7 +580,12 @@
                 </div>
                 <div class="input">
                     <label for="business" class="input__label">Business type</label>
-                    <input type="text" class="input__textbox" placeholder="Business type" name="business" id="business">
+                    <select name="business" id="business" class="input__selectbox">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <!-- <input type="text" class="input__textbox" placeholder="Business type" name="business" id="business"> -->
                 </div>
                 <div class="input">
                     <label for="email" class="input__label">Email</label>
@@ -600,7 +608,7 @@
         <div class="footer__wrapper">
             <div class="footer__left">
                 <form action="#" class="subscribe">
-                    <input type="text" placeholder="Subscribe to our newsletter">
+                    <input type="text" name="email" placeholder="Subscribe to our newsletter">
                     <input type="submit" value="Send">
                 </form>
                 <div class="footer__corp">© 2023 Uppointment All Rights Reserved</div>

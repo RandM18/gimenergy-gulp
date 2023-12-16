@@ -88,7 +88,7 @@
                         <ul>
                             <li>
                                 <a href="contacts.html">
-                                    <span>General Inquiry.</span>
+                                    <span>General Inquiry</span>
                                 </a>
                             </li>
                             <li>
@@ -524,7 +524,12 @@
                 </div>
                 <div class="input">
                     <label for="business" class="input__label">Business type</label>
-                    <input type="text" class="input__textbox" placeholder="Business type" name="business" id="business">
+                    <select name="business" id="business" class="input__selectbox">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <!-- <input type="text" class="input__textbox" placeholder="Business type" name="business" id="business"> -->
                 </div>
                 <div class="input">
                     <label for="email" class="input__label">Email</label>
@@ -547,7 +552,7 @@
         <div class="footer__wrapper">
             <div class="footer__left">
                 <form action="#" class="subscribe">
-                    <input type="text" placeholder="Subscribe to our newsletter">
+                    <input type="text" name="email" placeholder="Subscribe to our newsletter">
                     <input type="submit" value="Send">
                 </form>
                 <div class="footer__corp">© 2023 Uppointment All Rights Reserved</div>

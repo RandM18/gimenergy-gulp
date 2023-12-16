@@ -55,6 +55,7 @@ jQuery(function ($) {
             clickable: true,
         },
         navigation: {
+            prevEl: "#mainslider-swiper-small-prev",
             nextEl: "#mainslider-swiper-small-next",
         },
         thumbs: {
@@ -64,7 +65,21 @@ jQuery(function ($) {
     mainslider.controller.control = mainsliderSmall;
     mainsliderSmall.controller.control = mainslider;
 
-    const maincards = new Swiper(".maincards__grid2", {
+    $('#mainslider-pause').on('click', function(e){
+        e.preventDefault();
+        $(this).hide();
+        $("#mainslider-start").show();
+        mainslider.pause();
+    });
+    $('#mainslider-start').on('click', function(e){
+        e.preventDefault();
+        $(this).hide();
+        $("#mainslider-pause").show();
+        mainslider.resume();
+    });
+
+
+    const maincards = new Swiper(".maincards__grid", {
         slidesPerView: 1.5,
         spaceBetween: 16,
         breakpoints: {
@@ -274,7 +289,11 @@ jQuery(function ($) {
         $(this).toggleClass("active").closest(".faqItem").find(".faqItem__body").slideToggle();
     });
 
-    $(".pricing-page .selectbox").chosen({width:180});
+    $(".pricing-page .selectbox").chosen({
+        width: 180,
+        disable_search_threshold: 10,
+    });
+    $(".input__selectbox").chosen({ disable_search_threshold: 10 });
 
     // const teamsize = new CustomSelect("#teamsize");
     // const adminsize = new CustomSelect("#adminsize");
@@ -392,13 +411,26 @@ jQuery(function ($) {
                 scrollTrigger: {
                     trigger: $(this),
                     start: "-400 center",
+                    end: "top center",
+                    scrub: 1,
                 },
                 opacity: 1,
                 y: 0,
-                duration: 0.6,
             });
         });
-        
+    }
+    if ($(".s-programFeatures__item").length > 0) {
+        $(".s-programFeatures__item_icon img").each(function () {
+            gsap.to($(this), {
+                scrollTrigger: {
+                    trigger: $(this),
+                    start: "top center",
+                    end: "bottom center",
+                    scrub: 1,
+                },
+                x: 0,
+            });
+        });
     }
     
 });

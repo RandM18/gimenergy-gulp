@@ -11,8 +11,7 @@
     </div>
     <div class="maincards">
         <div class="container">
-            <!-- <div class="maincards__grid"> -->
-                <div class="swiper maincards__grid2">
+            <div class="swiper maincards__grid">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <label class="maincard">
@@ -86,9 +85,6 @@
                 </div>
                 
                 
-                
-                
-            <!-- </div> -->
             <div class="maincards__footer">
                 <a href="#" class="rvbtn" id="maincards-cart"><span class="text">Sign up now</span>
                     <svg width="18" height="8">
@@ -201,10 +197,16 @@
                     <div>
                         <a href="#" class="mainslider__link">See all services
                             <svg width="18" height="8">
-                            <use xlink:href="/upp/assets/img/icons.svg#arrow"></use>
-                        </svg>
+                                <use xlink:href="/upp/assets/img/icons.svg#arrow"></use>
+                            </svg>
                         </a>
-                        <div class="swiper-pagination" id="mainslider-page"></div>
+                        <div class="swiper-actions">
+                            <button class="swiper-pause" id="mainslider-pause">
+                                ||
+                            </button>
+                            <button class="swiper-play" id="mainslider-start">></button>
+                            <div class="swiper-pagination" id="mainslider-page"></div>
+                        </div>
                     </div>
                     <div class="swiper mainslider-swiper-small">
                         <div class="swiper-wrapper">
@@ -213,6 +215,7 @@
                             <div class="swiper-slide"><img src="assets/img/slide-3-s.svg" alt="poster"></div>
                             <div class="swiper-slide"><img src="assets/img/slide-4-s.svg" alt="poster"></div>
                         </div>
+                        <div class="mainslider-swiper-small-prev" id="mainslider-swiper-small-prev">Previous</div>
                         <div class="mainslider-swiper-small-next" id="mainslider-swiper-small-next">Next</div>
                     </div>
 

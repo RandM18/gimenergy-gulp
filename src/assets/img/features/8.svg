@@ -1,7 +1,6 @@
-<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="x-circle 1">
-<path id="Vector" d="M12.333 22C17.8559 22 22.333 17.5228 22.333 12C22.333 6.47715 17.8559 2 12.333 2C6.81016 2 2.33301 6.47715 2.33301 12C2.33301 17.5228 6.81016 22 12.333 22Z" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_2" d="M15.333 9L9.33301 15" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_3" d="M9.33301 9L15.333 15" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="edit-3 1">
+<path id="Vector" d="M12 20H21" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M16.5 3.49998C16.8978 3.10216 17.4374 2.87866 18 2.87866C18.2786 2.87866 18.5544 2.93353 18.8118 3.04014C19.0692 3.14674 19.303 3.303 19.5 3.49998C19.697 3.69697 19.8532 3.93082 19.9598 4.18819C20.0665 4.44556 20.1213 4.72141 20.1213 4.99998C20.1213 5.27856 20.0665 5.55441 19.9598 5.81178C19.8532 6.06915 19.697 6.303 19.5 6.49998L7 19L3 20L4 16L16.5 3.49998Z" stroke="#D8DEFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </svg>
