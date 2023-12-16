@@ -4172,28 +4172,13 @@ body.mobile-menu .mobileMenu {
     border-radius: 0 4px 4px 0;
 }
 
+.contacts-page {
+    background-color: #fff;
+}
+
 .contacts-page .header {
-    background-color: #2C3647;
+    background-color: #fff;
     border-bottom: 1px solid #D8DEFD;
-}
-
-.contacts-page .header .menu > li > a {
-    color: #fff;
-}
-
-.contacts-page .header .menu > li > a::after {
-    background-color: #fff;
-}
-
-.contacts-page .header__actions .rvbtn {
-    border-color: #fff;
-    background-color: transparent;
-    color: #fff;
-}
-
-.contacts-page .header__actions .rvbtn:hover {
-    color: #090909;
-    background-color: #fff;
 }
 
 .contacts-page .main {
@@ -4202,9 +4187,9 @@ body.mobile-menu .mobileMenu {
 
 .s-contacts {
     display: flex;
-    background-color: #2C3647;
+    background-color: #fff;
     width: 100%;
-    color: #fff;
+    color: #090909;
 }
 
 @media (max-width: 768px) {
@@ -4217,7 +4202,7 @@ body.mobile-menu .mobileMenu {
     flex: 0 0 40%;
     padding-top: 64px;
     padding-bottom: 64px;
-    border-right: 1px solid #D8DEFD;
+    background-color: #E8DDCF;
     padding-right: 15px;
     padding-left: calc((100vw - (1374px)) / 2);
 }
@@ -4267,14 +4252,14 @@ body.mobile-menu .mobileMenu {
 }
 
 .s-contacts__label {
-    color: #FDF9F3;
+    color: rgb(180, 137, 27);
     font-weight: 600;
     line-height: 1.25;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
 }
 
 .s-contacts__title {
-    color: #FFF;
+    color: #090909;
     font-size: 48px;
     font-weight: 500;
     line-height: 1.29;
@@ -4300,25 +4285,15 @@ body.mobile-menu .mobileMenu {
     font-size: 12px;
 }
 
-.s-contacts__form .textbox {
-    background-color: transparent;
-    border-color: #fff;
-    color: #fff;
-}
-
-.s-contacts__form .textbox::-moz-placeholder {
-    color: #e6e6e6;
-}
-
-.s-contacts__form .textbox::placeholder {
-    color: #e6e6e6;
-}
-
 .s-contacts__form .box:first-child {
     grid-column: span 2;
 }
 
-.s-contacts__form .box:nth-child(4), .s-contacts__form .box:nth-child(5) {
+.s-contacts__form .box:nth-child(2) {
+    grid-column: span 2;
+}
+
+.s-contacts__form .box:nth-child(5), .s-contacts__form .box:nth-child(6) {
     grid-column: span 2;
 }
 
@@ -4332,6 +4307,8 @@ body.mobile-menu .mobileMenu {
     width: 100%;
     background-color: #CFA434;
     border: none;
+    line-height: 1.25;
+    font-size: 16px;
 }
 
 .s-contacts__form.ticket .box {
