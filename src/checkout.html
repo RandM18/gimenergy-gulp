@@ -96,6 +96,9 @@
                                 <div class="box">
                                     <label for="cardname">Card name</label>
                                     <input type="text" name="cardname" id="cardname" placeholder="Card name" class="textbox" required2>
+                                    <p class="cardname__span"><svg width="16" height="16">
+                                        <use xlink:href="/upp/assets/img/icons.svg#secure"></use>
+                                    </svg>Secure Connection</p>
                                 </div>
                                 <div class="box">
                                     <label for="mmyy">MM / YY</label>
@@ -110,16 +113,24 @@
                                     <input type="text" name="billingaddress" id="billingaddress" placeholder="Address" class="textbox" required2>
                                 </div>
                                 <div class="box">
-                                    <label for="billingaddress2">Billing address 2 (optional)</label>
-                                    <input type="text" name="billingaddress2" id="billingaddress2" placeholder="Address" class="textbox">
+                                    <label for="city">City</label>
+                                    <select name="city" id="city" class="selectbox" data-placeholder="Select">
+                                        <option value=""></option>
+                                        <option value="Toronto">Toronto</option>
+                                        <option value="Montréal">Montréal</option>
+                                        <option value="Vancouver">Vancouver</option>
+                                        <option value="Ottawa">Ottawa</option>
+                                        <option value="Calgary">Calgary</option>
+                                        <option value="Edmonton">Edmonton</option>
+                                        <option value="Hamilton">Hamilton</option>
+                                    </select>
                                 </div>
                                 <div class="box">
                                     <label for="state">State</label>
-                                    <input type="text" name="state" id="state" placeholder="Select" class="textbox">
-                                </div>
-                                <div class="box">
-                                    <label for="city">City</label>
-                                    <input type="text" name="city" id="city" placeholder="Select" class="textbox">
+                                    <select name="state" id="state" class="selectbox" data-placeholder="Select">
+                                        <option value=""></option>
+                                        @@include("./tpl/components/states.html")
+                                    </select>
                                 </div>
                                 <div class="box">
                                     <label for="zip">ZIP</label>
@@ -132,9 +143,12 @@
                 <div class="checkout__tab" style="display: none;">
                     <div class="checkoutBox">
                         <div class="ty">
-                            <div class="checkoutBox__title">Thank you!</div>
-                            <div class="checkout__text">We’re receives your request.
+                            <div class="rvtitle checkoutBox__title">Thank you!</div>
+                            <div class="checkout__text">We’re receives your request.<br>
                             Our representative will contact you shortly!</div>
+                            <a href="#" class="rvbtn ty__btn">Return to home page<svg width="18" height="8">
+                                <use xlink:href="/upp/assets/img/icons.svg#arrow"></use>
+                            </svg></a>
                         </div>
                     </div>
                 </div>

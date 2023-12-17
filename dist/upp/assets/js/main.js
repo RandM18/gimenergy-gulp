@@ -291,9 +291,10 @@ jQuery(function ($) {
 
     $(".pricing-page .selectbox").chosen({
         width: 180,
-        disable_search_threshold: 10,
+        disable_search_threshold: 99999,
     });
-    $(".input__selectbox").chosen({ disable_search_threshold: 10 });
+    $(".input__selectbox").chosen({ disable_search_threshold: 99999 });
+    $(".selectbox").chosen({width: "100%", disable_search_threshold: 99999 });
 
     // const teamsize = new CustomSelect("#teamsize");
     // const adminsize = new CustomSelect("#adminsize");
@@ -305,6 +306,7 @@ jQuery(function ($) {
         $(".checkout__sidebar:eq(0)").hide();
         $(".checkout__sidebar:eq(1)").show();
         $(".checkoutHeader__item:eq(1)").addClass('active');
+        $("html, body").animate({ scrollTop: "0px" }, 300);
     });
     $("#checkout-form").on('submit', function(e){
         e.preventDefault();
@@ -312,6 +314,7 @@ jQuery(function ($) {
         $(".checkout__tab:eq(2)").show();
         $(".checkout__sidebar:eq(1)").hide();
         $(".checkoutHeader__item:eq(2)").addClass("active");
+        $("html, body").animate({ scrollTop: "0px" }, 300);
     });
 
     $(".terms__actions").on('click', '.terms__link', function(e){
