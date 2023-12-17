@@ -4220,8 +4220,11 @@ body.mobile-menu .mobileMenu {
 .s-contacts__left {
     flex: 0 0 40%;
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 164px;
     background-color: #E8DDCF;
+    background-image: url("../img/contactus-bg.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
     padding-right: 15px;
     padding-left: calc((100vw - (1374px)) / 2);
 }
@@ -4753,4 +4756,12 @@ body.mobile-menu .mobileMenu {
 .active-result.result-selected {
     background-color: #CFA434;
     background-image: none;
+}
+
+.mainform .chosen-single {
+    border-color: #fff;
+}
+
+.mainform .chosen-single span {
+    color: #fff;
 }

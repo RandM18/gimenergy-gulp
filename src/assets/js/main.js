@@ -414,7 +414,7 @@ jQuery(function ($) {
                 scrollTrigger: {
                     trigger: $(this),
                     start: "-400 center",
-                    end: "top center",
+                    end: "-100 center",
                     scrub: 1,
                 },
                 opacity: 1,

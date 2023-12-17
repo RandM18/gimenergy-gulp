@@ -2868,30 +2868,33 @@ body.mobile-menu{
 
 
      &__left {
-         flex: 0 0 40%;
-         padding-top: 64px;
-         padding-bottom: 64px;
+        flex: 0 0 40%;
+        padding-top: 64px;
+        padding-bottom: 164px;
         //  border-right: 1px solid #D8DEFD;
-         background-color: #E8DDCF;
+        background-color: #E8DDCF;
+        background-image: url('../img/contactus-bg.svg');
+        background-repeat: no-repeat;
+        background-position: right bottom;
 
-         .box {
-             max-width: 526px;
-             @media(max-width: 768px){
-                max-width: 100%;
-             }
-         }
+        .box {
+            max-width: 526px;
+            @media(max-width: 768px){
+            max-width: 100%;
+            }
+        }
 
-         padding-right: 15px;
-         padding-left: calc((100vw - (#{$maxWidthContainer}px)) / 2);
+        padding-right: 15px;
+        padding-left: calc((100vw - (#{$maxWidthContainer}px)) / 2);
 
-         @media(max-width: #{$maxWidthContainer}px) {
-             padding-left: 15px;
-         }
-         @media(max-width: 768px){
-            flex:1 1 auto;
-            padding-bottom: 0;
-            text-align: center;
-         }
+        @media(max-width: #{$maxWidthContainer}px) {
+            padding-left: 15px;
+        }
+        @media(max-width: 768px){
+        flex:1 1 auto;
+        padding-bottom: 0;
+        text-align: center;
+        }
      }
 
      &__right {
@@ -3377,4 +3380,12 @@ body.mobile-menu{
         background-image: none;
     }
 
+}
+.mainform{
+    .chosen-single{
+        border-color:#fff;
+        span{
+            color:#fff;
+        }
+    }
 }
