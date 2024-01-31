@@ -55,6 +55,7 @@ img{
 .swiper-pagination-bullet{
     width: 16px;
     height: 16px;
+    background-color: #EEE9E2;
 }
 .swiper-pagination-bullet-active {
     background-color: #B4891B;
@@ -305,7 +306,7 @@ $maxWidthContainer: 1374;
             }
             &.small{
                 grid-template-columns: 1fr;
-                max-width: 210px;
+                max-width: 245px;
             }
         
             li {
@@ -1181,7 +1182,7 @@ body.mobile-menu{
     // .maininfo__footer
 
     &__footer {
-        padding-top: 40px;
+        padding-top: 120px;
         // .maininfo__footer_title
 
         &_title {
@@ -1192,6 +1193,9 @@ body.mobile-menu{
             @include af(48, 24);
             margin-bottom: 48px;
             text-align: center;
+            max-width: 910px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         // .maininfo__footer_actions
@@ -1749,11 +1753,16 @@ body.mobile-menu{
     color: #090909;
     margin-bottom: 8px;
     border: 1px solid #EEE9E2;
+    transition: .4s ease;
+
+    &.active{
+        border-color:#356FB5;
+    }
     // .faqItem__header
 
     &__header {
         padding: 24px 55px 24px 24px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 1.22;
         font-size: 18px;
         position: relative;
@@ -1761,7 +1770,8 @@ body.mobile-menu{
         &::before{
             content:'';
             position: absolute;
-            top: 26px;
+            // top: 26px;
+            top: calc(50% - 1px);
             right: 26px;
             width: 20px;
             height: 2px;
@@ -1771,7 +1781,8 @@ body.mobile-menu{
         &::after{
             content:'';
             position: absolute;
-            top: 26px;
+            // top: 26px;
+            top: calc(50% - 1px);
             right: 26px;
             width: 20px;
             height: 2px;
@@ -1779,7 +1790,7 @@ body.mobile-menu{
             transform: rotate(90deg);
             transition:  .3s ease;
         }
-        &.active{
+        .faqItem.active &{
             color:#356FB5;
             &::after{
                 transform: rotate(0deg);
@@ -2749,6 +2760,7 @@ body.mobile-menu{
         padding-top: 120px;
         padding-bottom: 120px;
         padding-right: 0;
+        font-weight: 500;
     }
     .sfaq__tabs{
         padding-top: 120px;

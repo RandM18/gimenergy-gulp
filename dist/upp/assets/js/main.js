@@ -68,13 +68,13 @@ jQuery(function ($) {
     $('#mainslider-pause').on('click', function(e){
         e.preventDefault();
         $(this).hide();
-        $("#mainslider-start").show();
+        $("#mainslider-start").show().css('display', 'flex');
         mainslider.pause();
     });
     $('#mainslider-start').on('click', function(e){
         e.preventDefault();
         $(this).hide();
-        $("#mainslider-pause").show();
+        $("#mainslider-pause").show().css('display', 'flex');
         mainslider.resume();
     });
 
@@ -286,7 +286,7 @@ jQuery(function ($) {
    
 
     $(".faqItem__header").on('click', function(e){
-        $(this).toggleClass("active").closest(".faqItem").find(".faqItem__body").slideToggle();
+        $(this).closest(".faqItem").toggleClass("active").find(".faqItem__body").slideToggle();
     });
 
     $(".pricing-page .selectbox").chosen({
@@ -348,6 +348,7 @@ jQuery(function ($) {
                 ease: "power1.out",
             },
             scale: 1,
+            borderRadius: 0
         });
         const growTl = gsap.timeline({
             scrollTrigger: {

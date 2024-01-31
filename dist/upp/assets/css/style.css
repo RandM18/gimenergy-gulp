@@ -1260,6 +1260,7 @@ img {
 .swiper-pagination-bullet {
     width: 16px;
     height: 16px;
+    background-color: #EEE9E2;
 }
 
 .swiper-pagination-bullet-active {
@@ -1511,7 +1512,7 @@ img {
 
 .menu li ul.small {
     grid-template-columns: 1fr;
-    max-width: 210px;
+    max-width: 245px;
 }
 
 .menu li ul li {
@@ -2470,7 +2471,7 @@ body.mobile-menu .mobileMenu {
 }
 
 .maininfo__footer {
-    padding-top: 40px;
+    padding-top: 120px;
 }
 
 .maininfo__footer_title {
@@ -2480,6 +2481,9 @@ body.mobile-menu .mobileMenu {
     font-size: 48px;
     margin-bottom: 48px;
     text-align: center;
+    max-width: 910px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 1374px) {
@@ -3046,11 +3050,16 @@ body.mobile-menu .mobileMenu {
     color: #090909;
     margin-bottom: 8px;
     border: 1px solid #EEE9E2;
+    transition: 0.4s ease;
+}
+
+.faqItem.active {
+    border-color: #356FB5;
 }
 
 .faqItem__header {
     padding: 24px 55px 24px 24px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.22;
     font-size: 18px;
     position: relative;
@@ -3060,7 +3069,7 @@ body.mobile-menu .mobileMenu {
 .faqItem__header::before {
     content: "";
     position: absolute;
-    top: 26px;
+    top: calc(50% - 1px);
     right: 26px;
     width: 20px;
     height: 2px;
@@ -3071,7 +3080,7 @@ body.mobile-menu .mobileMenu {
 .faqItem__header::after {
     content: "";
     position: absolute;
-    top: 26px;
+    top: calc(50% - 1px);
     right: 26px;
     width: 20px;
     height: 2px;
@@ -3080,15 +3089,15 @@ body.mobile-menu .mobileMenu {
     transition: 0.3s ease;
 }
 
-.faqItem__header.active {
+.faqItem.active .faqItem__header {
     color: #356FB5;
 }
 
-.faqItem__header.active::after {
+.faqItem.active .faqItem__header::after {
     transform: rotate(0deg);
 }
 
-.faqItem__header.active::before {
+.faqItem.active .faqItem__header::before {
     background-color: #356FB5;
 }
 
@@ -4105,6 +4114,7 @@ body.mobile-menu .mobileMenu {
     padding-top: 120px;
     padding-bottom: 120px;
     padding-right: 0;
+    font-weight: 500;
 }
 
 .faq-page .sfaq__tabs {
